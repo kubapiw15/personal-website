@@ -1,6 +1,7 @@
 <template>
-    <nuxtPage></nuxtPage>
-    <footer></footer>
+    <div>
+        
+    </div>
 </template>
 
 <script setup>
