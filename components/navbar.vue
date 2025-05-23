@@ -1,5 +1,5 @@
 <template>
-    <div class="component">
+    <div class="component" :class="{navbar_scrolled: y > 0}">
         <div class="content">
             <nav>
                 <nuxt-link class="link" to="">{{ $t('mainPage.navbar1') }}</nuxt-link>
@@ -17,20 +17,23 @@
 </template>
 
 <script setup>
+
+    const { y } = useScroll(window)
     
     const colorMode = useColorMode()
     const switchColorMode = ()=>{
-        colorMode.value == 'dark' ? colorMode.value = 'light' : colorMode.value = 'dark'
+        colorMode.value == 'dark' ? colorMode.preference = 'light' : colorMode.preference = 'dark'
     }
 </script>
 
 <style scoped>
     .component {
-        width: 100%;
+        width: 100vw;
         position: fixed;
-        /* border-bottom: var(--low-contrast) solid 0.1rem; */
-        transition: border-bottom 0.2s;
-        /* box-shadow: 0 0 1rem var(--low-contrast-30); */
+        transition: border-bottom 0.2s, background-color 0.2s;
+        z-index: 2;
+        border-bottom: transparent solid 0.1rem;
+        
     }
 
     .content {
@@ -108,5 +111,61 @@
     html.light .colormode i:nth-child(2){
         transform: translateY(-50%);
         opacity: 0;
+    }
+
+    .navbar_scrolled {
+        background-color: rgba(var(--bg-rgb), 0.5);
+        border-bottom: var(--lower-contrast) solid 0.1rem;
+        backdrop-filter: blur(1rem);
+    }
+
+    @media screen and (max-width: 1400px){
+        .colormode {
+            right: 0;
+        }
+        .link {
+            font-size: 1rem;
+        }
+    }
+
+    @media screen and (max-width: 1000px){
+        
+        .navbar_scrolled {
+            background-color: transparent;
+            border-bottom: transparent solid 0.1rem;
+        }
+        
+        
+        .component {
+            position: absolute;
+            z-index: 2;
+        }
+
+        .content {
+            align-items: flex-start;
+        }
+        nav {
+            flex-wrap: wrap;
+            width: calc(100% - 5rem);
+            position: relative;
+            padding-top: 0.5rem;
+        }
+
+        .colormode {
+            height: 5rem;
+            width: 5rem;
+            box-sizing: border-box;
+            position: static;
+        }
+
+        .link {
+            padding: 0.8rem 1rem;
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        .link::after {
+            display: none;
+        }
     }
 </style>

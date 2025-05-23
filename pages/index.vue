@@ -2,10 +2,20 @@
     <div class="page">
         <Navbar></Navbar>
         <HeroSection></HeroSection>
+        <PersonalSection></PersonalSection>
     </div>
 </template>
 
 <script setup>
+import AOS from 'aos'
+
+onMounted(()=>{
+    setTimeout(() => {
+        AOS.init({
+            once: true
+        });
+    }, 0);
+})
 
 </script>
 
@@ -16,6 +26,9 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    background-color: var(--bg);
+    transition: background-color 0.2s;
 }
+
 
 </style>

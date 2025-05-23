@@ -5,6 +5,7 @@
             <p>{{ $t('mainPage.more') }}</p>
             <div class="animation">
                 <div class="scroll"></div>
+                <!-- TODO shadow inset -->
                 <i class='bx bx-chevrons-down' ></i>
             </div>
         </div>
@@ -22,6 +23,8 @@ const iconList = [
     'bx-user',
     'bxl-javascript',
     'bxl-vuejs',
+    'bx-nuxt-js',
+    'bx-vercel',
     'bxl-php',
     'bxl-html5',
     'bxl-css3',
@@ -47,7 +50,7 @@ onMounted(()=>{
         icons.value.push(iconList[Math.floor(Math.random() * iconList.length)])
         setTimeout(() => {
             icons.value.shift()
-        }, 5000);
+        }, 5500);
     }, 200);
 })
 
@@ -56,7 +59,7 @@ onMounted(()=>{
 <style scoped>
     .component {
         margin-top: 3rem;
-        width: 100%;
+        width: 100vw;
         height: calc(100vh - 3rem);
         display: flex;
         justify-content: center;
@@ -79,6 +82,9 @@ onMounted(()=>{
 
     .more {
         margin: 5rem 0 0 0;
+        animation: fade linear forwards;
+        animation-timeline: scroll(root block);
+        animation-range: exit 0% exit 20%;
     }
 
     .more p {
@@ -129,12 +135,52 @@ onMounted(()=>{
         }
     }
 
+
+
     @keyframes reveal {
         0% {
             opacity: 0;
         }
         100% {
             opacity: 1;
+        }
+    }
+
+        @keyframes fade {
+        0% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @media screen and (max-width: 1000px){
+        .more p {
+            font-size: 1.3rem;
+        }
+
+        .more {
+            margin: 3rem 0 0 0;
+        }
+
+        .more i {
+            scale: 1.2;
+        }
+
+        .scroll {
+            scale: 1.3;
+        }
+
+        .component {
+            margin-top: 0;
+            height: calc(100vh - 5rem);
+        }
+
+        h1 {
+            text-align: center;
+            padding: 0 1rem;
         }
     }
 </style>

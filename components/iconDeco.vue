@@ -16,10 +16,14 @@
 
     onMounted(()=>{
         setTimeout(() => {
-        element.value.style.left = `${random+2.5}vw`
+        element.value.style.left = `calc(${random+2.5}vw - 2rem)`
         element.value.style.scale = "1"
         element.value.style.opacity = "0"
-        element.value.style.transform = `translateY(-${5+Math.sqrt(Math.pow(random - 47.5, 2))/1.5}rem)`
+        if(window.matchMedia("(max-width: 1000px)").matches) {
+            element.value.style.transform = `translateY(-${10+Math.abs(random - 47.5)/4}rem)`
+        } else {
+            element.value.style.transform = `translateY(-${10+Math.pow(random - 47.5, 2)/80}rem)`
+        }
         element.value.style.color = color
         }, 20);
     })
@@ -32,7 +36,7 @@
         bottom: 0;
         scale: 0;
         font-size: 4rem;
-        transition: scale 5s, bottom 5s, opacity 5s, transform 0s;
-        /* color: var(--additive); */
+        transition: scale 5s, bottom 5s, opacity 5s, transform 0s, color 0.2s;
+        transform: translateX(-50%);
     }
 </style>

@@ -13,10 +13,18 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: var(--bg);
+        /* background-color: var(--bg); */
         transition: background-color 0.2s;
         padding: 0;
         margin: 0;
         user-select: none;
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    @media screen and (max-width: 1000px){
+        html {
+            font-size: 12px;
+        }
     }
 </style>

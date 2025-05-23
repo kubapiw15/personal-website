@@ -1,23 +1,35 @@
 html.light {
     --bg: rgb(241, 241, 241);
+    --bg-rgb: 241, 241, 241;
     --additive: orange;
+    --additive-active: rgb(255, 183, 48);
+    --additive-rgb: 255, 166, 0;
     --additive-50: rgba(255, 166, 0, 0.5);
     --text-dark: rgb(15, 15, 15);
-    --text-main: rgb(39, 39, 39);
+    --text-main: rgb(36, 36, 36);
+    --text-lighter: rgb(48, 48, 48);
     --text-light: rgb(63, 63, 63);
     --low-contrast: rgb(185, 185, 185);
     --lower-contrast: rgb(204, 204, 204);
     --low-contrast-30: rgb(185, 185, 185, 0.3);
+    --low-contrast-60: rgb(185, 185, 185, 0.6);
+    --low-contrast-90: rgb(185, 185, 185, 0.9);
 }
 
 html.dark {
     --bg: rgb(19, 19, 19);
+    --bg-rgb: 19, 19, 19;
     --additive: orange;
+    --additive-active: rgb(190, 124, 0);
+    --additive-rgb: 255, 166, 0;
     --additive-50: rgba(255, 166, 0, 0.5);
     --text-dark: rgb(247, 247, 247);
     --text-main: rgb(226, 226, 226);
+    --text-lighter: rgb(201, 201, 201);
     --text-light: rgb(180, 180, 180);
     --low-contrast: rgb(58, 58, 58);
-    --lower-contrast: rgb(39, 39, 39);
+    --lower-contrast: rgb(39, 39, 39); 
     --low-contrast-30: rgb(58, 58, 58, 0.3);
+    --low-contrast-60: rgb(58, 58, 58, 0.6);
+    --low-contrast-90: rgb(58, 58, 58, 0.9);
 }

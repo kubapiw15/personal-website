@@ -2,22 +2,22 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
-  css: ['@/assets/css/colors.css', 'boxicons/css/boxicons.min.css'],
+  css: ['@/assets/css/colors.css', '@/assets/css/animations.css', 'boxicons/css/boxicons.min.css', 'aos/dist/aos.css'],
 
   devServer: {
-    port: 433,
+    port: 443,
     host: '192.168.0.241',
     https: true
   },
 
-  modules: ['@nuxtjs/color-mode', '@nuxtjs/google-fonts', '@nuxtjs/i18n'],
+  modules: ['@nuxtjs/color-mode', '@nuxtjs/google-fonts', '@nuxtjs/i18n', '@vueuse/nuxt', '@nuxt/image'],
   colorMode: {
     preference: 'system',
     fallback: 'light',
     classPrefix: '',
     classSuffix: '',
     storage: 'localStorage',
-    storageKey: 'nuxt-color-mode'
+    storageKey: 'kubapiw-color-mode'
   },
   googleFonts: {
     families: {
@@ -31,7 +31,13 @@ export default defineNuxtConfig({
     ],
     defaultLocale: 'en',
     langDir: 'locales/',
-    strategy: 'prefix_and_default'
+    strategy: 'prefix_and_default',
+    detectBrowserLanguage: {
+      useCookie: true, // Zapamiętuje język w cookie
+      cookieKey: 'i18n_redirected',
+      alwaysRedirect: false, // Przekierowuje, jeśli język przeglądarki różni się od domyślnego
+      fallbackLocale: 'en' // Język domyślny, jeśli przeglądarka ma nieobsługiwany język
+    }
   },
   app: {
     head: {

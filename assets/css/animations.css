@@ -1,0 +1,23 @@
+/* Animacja w lewo */
+
+[data-aos='anim-left'] {
+    opacity: 0;
+    transform: translateX(2rem);
+}
+
+[data-aos='anim-left'].aos-animate {
+    opacity: 1;
+    transform: translateX(0rem);
+}
+
+/* Animacja w górę */
+
+[data-aos='anim-up'] {
+    opacity: 0;
+    transform: translateY(2rem);
+}
+
+[data-aos='anim-up'].aos-animate {
+    opacity: 1;
+    transform: translateY(0rem);
+}
