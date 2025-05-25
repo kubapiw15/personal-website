@@ -68,7 +68,7 @@
         display: flex;
         flex-direction: column;
         border-radius: 1rem;
-        transition: opacity 0.2s, backdrop-filter 0.2s, transform 0.2s;
+        transition: opacity 0.2s, backdrop-filter 0.2s, transform 0.2s, background-color 0.2s;
         background-color: var(--low-contrast-60);
         backdrop-filter: blur(5rem);
         padding: 0.5rem;
@@ -77,6 +77,14 @@
 
     html.light .tile {
         background-color: var(--low-contrast-30);
+    }
+
+    html.light .tile:hover {
+        background-color: var(--low-contrast-60);
+    }
+
+    .tile:hover {
+        background-color: var(--low-contrast-90);
     }
 
     .tile:nth-of-type(2){
@@ -107,7 +115,13 @@
         right: 65%;
         z-index: 2;
         bottom: 0;
+        transition: scale 0.2s;
     }
+
+    .tile:hover .img {
+        scale: 1.05;
+    }
+
 
     h3 {
         color: var(--text-dark);

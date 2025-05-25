@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
-  css: ['@/assets/css/colors.css', '@/assets/css/animations.css', 'boxicons/css/boxicons.min.css', 'aos/dist/aos.css'],
+  css: ['@/assets/css/colors.css', '@/assets/css/animations.css', '@/assets/icons/boxicons.min.css', '@/assets/icons/boxicons-brands.min.css', 'aos/dist/aos.css'],
 
   devServer: {
     port: 443,

@@ -3,6 +3,7 @@
         <Navbar></Navbar>
         <HeroSection></HeroSection>
         <PersonalSection></PersonalSection>
+        <ToolsSection></ToolsSection>
     </div>
 </template>
 

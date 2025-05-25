@@ -1,5 +1,5 @@
 <template>
-    <i class='bx' :class="icon" ref="element"></i>
+    <i :class="icon" ref="element"></i>
 </template>
 
 <script setup>

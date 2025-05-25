@@ -12,7 +12,6 @@
   "dependencies": {
     "@kubapiw15/scrollmotion": "^0.3.0",
     "aos": "^2.3.4",
-    "boxicons": "^2.1.4",
     "nuxt": "^3.15.4",
     "vue": "latest",
     "vue-router": "latest"

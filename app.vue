@@ -27,4 +27,10 @@
             font-size: 12px;
         }
     }
+
+    @media screen and (min-width: 2500px){
+        html {
+            font-size: 24px;
+        }
+    }
 </style>

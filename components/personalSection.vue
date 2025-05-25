@@ -30,7 +30,7 @@
 
     .shadowDeco1 {
         width: 100rem;
-        height: 100rem;
+        height: 100%;
         left: -30rem;
         top: 0;
         opacity: 0.25;
@@ -48,5 +48,11 @@
 
     html.light .shadowDeco {
         opacity: 0;
+    }
+
+    @media screen and (max-width: 1000px){
+        .shadowDeco1 {
+            height: 100rem;
+        }
     }
 </style>
