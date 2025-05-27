@@ -4,6 +4,7 @@
         <HeroSection></HeroSection>
         <PersonalSection></PersonalSection>
         <ToolsSection></ToolsSection>
+        <ContactSection></ContactSection>
     </div>
 </template>
 

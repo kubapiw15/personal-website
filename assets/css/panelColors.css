@@ -1,0 +1,33 @@
+
+
+html .panelLayout {
+    --bg-main: white;
+    --bg-lighter: rgb(243, 243, 243);
+    --bg-lighter-80: rgba(243, 243, 243, 0.8);
+    --bg-darker: rgb(233, 233, 233);
+    --bg-darker-80: rgba(233, 233, 233, 0.8);
+    --text-light: rgb(48, 48, 48);
+    --text-main: rgb(24, 24, 24);
+    --text-dark: black;
+    --text-dark-10: rgba(0, 0, 0, 0.1);
+    --text-dark-5: rgba(0, 0, 0, 0.05);
+    --intermediate: rgb(100, 100, 100);
+    --higher-contrast: rgb(200, 200, 200);
+    --low-contrast: rgb(221, 221, 221);
+}
+
+html.dark .panelLayout{
+    --bg-main: rgb(15, 15, 15);
+    --bg-lighter: rgb(27, 27, 27);
+    --bg-lighter-80: rgba(27, 27, 27, 0.8);
+    --bg-darker: rgb(37, 37, 37);
+    --bg-darker-80: rgba(37, 37, 37, 0.8);
+    --text-light: rgb(165, 165, 165);
+    --text-main: rgb(219, 219, 219);
+    --text-dark: rgb(255, 255, 255);
+    --text-dark-10: rgba(255, 255, 255, 0.05);
+    --text-dark-5: rgba(255, 255, 255, 0.02);
+    --intermediate: rgb(128, 128, 128);
+    --higher-contrast: rgb(69, 69, 69);
+    --low-contrast: rgb(49, 49, 49);
+}

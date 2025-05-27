@@ -100,6 +100,7 @@
         display: flex;
         justify-content: center;
         border-top: solid 0.1rem var(--low-contrast-30);
+        transition: border 0.2s;
     }
 
     .content {
@@ -145,14 +146,6 @@
         transition: color 0.2s, opacity 0.2s, transform 0.2s;
     }
 
-    /* .box {
-        display: flex;
-        justify-content: stretch;
-        background-color: var(--low-contrast-30);
-        padding: 2rem;
-        border-radius: 1rem;
-    } */
-
     .box {
         display: flex;
         justify-content: stretch;
@@ -163,8 +156,8 @@
     .link {
         background-color: var(--low-contrast-60);
         margin-inline: 3rem;
-        padding: 1rem 2rem;
         font-size: 1.2rem;
+        padding: 1rem 2.5rem;
         border-radius: 20rem;
         color: var(--text-main);
         transition: color 0.2s, background-color 0.2s, opacity 0.2s, transform 0.2s;

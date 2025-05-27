@@ -30,5 +30,7 @@ export default {
         tools2: "Twojego projektu.",
         tools3: "Dowiedz się więcej o technologiach oraz rozwiązaniach, które stosuję w aplikacjach, aby zapewnić im wszystkie potrzebne funkcjonalności.",
         tools4: "Przeglądaj",
+
+        contact1: "Tu mnie znajdziesz."
     }
 }

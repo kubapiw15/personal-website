@@ -41,6 +41,7 @@ h4 {
     opacity: 0.6;
 }
 
+
 .shadow {
     position: absolute;
     bottom: 0;
@@ -49,7 +50,12 @@ h4 {
     width: 200%;
     opacity: 0.1;
     mask-image: radial-gradient(circle,rgba(0, 0, 0, 0.2) 0%, rgb(0, 0, 0) 100%);
-    transition: opacity 0.2s;
+    transition: opacity 0.2s, mask-image 0.2s;
+}
+
+html.light .shadow {
+    
+    mask-image: radial-gradient(circle,rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
 }
 
 .tile:hover .shadow {

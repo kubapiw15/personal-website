@@ -1,6 +1,8 @@
 <template>
-    <nuxtPage></nuxtPage>
-    <footer></footer>
+    <div class="defaultLayout">
+        <nuxtPage></nuxtPage>
+        <footer></footer>
+    </div>
 </template>
 
 <script setup>
