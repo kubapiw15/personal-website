@@ -1,7 +1,9 @@
 <template>
     <div class="component">
         <div class="content">
-            <div class="photo" data-aos="fade"></div>
+            <div class="photo" data-aos="fade">
+                <NuxtImg alt="My photo" src="/img/me.webp" format="webp" class="img" />
+            </div>
             <div class="about">
                 <h2 data-aos="anim-left">
                     {{ $t('mainPage.about1') }} <span class="additive">{{ $t('mainPage.about2') }}</span>
@@ -13,9 +15,6 @@
                     <nuxt-link data-aos="anim-up" class="link" to="">{{ $t('mainPage.about6') }}</nuxt-link>
                     <nuxt-link data-aos="anim-up" class="link" to="">{{ $t('mainPage.about7') }}</nuxt-link>
                 </div>
-            </div>
-            <div class="examples">
-
             </div>
         </div>
     </div>
@@ -55,6 +54,19 @@
         backdrop-filter: blur(5rem);
         
         border: solid 0.10rem var(--low-contrast-30);
+        overflow: hidden;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img {
+        object-fit: cover; /* najważniejsze */
+        object-position: center; /* opcjonalnie - wyśrodkowanie */
+        display: block; /* usuwa domyślny odstęp inline */
+        width: 100%;
+        height: 100%;
     }
 
     .about {
@@ -153,6 +165,7 @@
             width: calc(50%);
             margin-top: 4rem;
             height: 85%;
+            max-width: 300px;
         }
 
         .about {

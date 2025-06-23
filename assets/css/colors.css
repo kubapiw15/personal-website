@@ -1,4 +1,4 @@
-html.light .defaultLayout {
+html.light {
     --bg: rgb(241, 241, 241);
     --bg-rgb: 241, 241, 241;
     --additive: orange;
@@ -17,17 +17,17 @@ html.light .defaultLayout {
     --low-contrast-90: rgb(185, 185, 185, 0.9);
 }
 
-html.dark .defaultLayout {
+html.dark {
     --bg: rgb(19, 19, 19);
     --bg-rgb: 19, 19, 19;
-    --additive: orange;
+    --additive: #ffa500;
     --additive-active: rgb(190, 124, 0);
     --additive-rgb: 255, 166, 0;
     --additive-50: rgba(255, 166, 0, 0.5);
     --text-dark: rgb(247, 247, 247);
     --text-main: rgb(226, 226, 226);
-    --text-lighter: rgb(201, 201, 201);
-    --text-light: rgb(180, 180, 180);
+    --text-lighter: rgb(180, 180, 180);
+    --text-light: rgb(139, 139, 139);
     --low-contrast: rgb(58, 58, 58);
     --lower-contrast: rgb(39, 39, 39); 
     --low-contrast-15: rgb(58, 58, 58, 0.15);

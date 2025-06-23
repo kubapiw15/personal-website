@@ -2,11 +2,11 @@
     <div class="component" :class="{navbar_scrolled: y > 0}">
         <div class="content">
             <nav>
-                <nuxt-link class="link" to="">{{ $t('mainPage.navbar1') }}</nuxt-link>
-                <nuxt-link class="link" to="">{{ $t('mainPage.navbar2') }}</nuxt-link>
-                <nuxt-link class="link" to="">{{ $t('mainPage.navbar3') }}</nuxt-link>
-                <nuxt-link class="link" to="">{{ $t('mainPage.navbar4') }}</nuxt-link>
-                <nuxt-link class="link" to="">{{ $t('mainPage.navbar5') }}</nuxt-link>
+                <nuxt-link class="link" :to="$localePath('aboutme')">{{ $t('mainPage.navbar1') }}</nuxt-link>
+                <nuxt-link class="link" :to="$localePath('projects')">{{ $t('mainPage.navbar2') }}</nuxt-link>
+                <nuxt-link class="link" :to="$localePath('contact')">{{ $t('mainPage.navbar3') }}</nuxt-link>
+                <nuxt-link class="link" :to="$localePath('tools')">{{ $t('mainPage.navbar4') }}</nuxt-link>
+                <nuxt-link class="link" :to="$localePath('sandbox')">{{ $t('mainPage.navbar5') }}</nuxt-link>
             </nav>
             <div class="colormode" @click="switchColorMode()">
                 <i class='bx bx-sun'></i>
@@ -57,6 +57,7 @@
         transition: color 0.2s;
         cursor: pointer;
         position: relative;
+        text-decoration: none;
     }
 
     .link::after {
@@ -95,7 +96,7 @@
     .colormode i {
         color: var(--low-contrast);
         position: absolute;
-        font-size: 2rem;
+        font-size: 1.6rem;
         transition: color 0.2s, transform 0.2s, opacity 0.2s;
     }
 

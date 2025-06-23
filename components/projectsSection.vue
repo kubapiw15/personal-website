@@ -6,21 +6,21 @@
 
                 <div class="tile" data-aos="anim-up">
                     <div class="topSection">
-                        <NuxtImg class="img" src="/img/undraw_pie-chart_eo9h.svg"></NuxtImg>
+                        <NuxtImg alt="pie chart" class="img" src="/img/undraw_pie-chart.svg"></NuxtImg>
                         <h3>{{ $t('mainPage.projects3') }}</h3>
                     </div>
                     <p>{{ $t('mainPage.projects3desc') }}</p>
                 </div>
                 <div class="tile" data-aos="anim-up">
                     <div class="topSection">
-                        <NuxtImg class="img" src="/img/undraw_real-time-sync_ro77.svg"></NuxtImg>
+                        <NuxtImg alt="custom app" class="img" src="/img/undraw_real-time-sync.svg"></NuxtImg>
                         <h3>{{ $t('mainPage.projects4') }}</h3>
                     </div>
                     <p>{{ $t('mainPage.projects4desc') }}</p>
                 </div>
                 <div class="tile" data-aos="anim-up">
                     <div class="topSection">
-                        <NuxtImg class="img" src="/img/undraw_landing_rd2s.svg"></NuxtImg>
+                        <NuxtImg alt="personal app" class="img" src="/img/undraw_landing.svg"></NuxtImg>
                         <h3>{{ $t('mainPage.projects2') }}</h3>
                     </div>
                     <p>{{ $t('mainPage.projects2desc') }}</p>
@@ -68,11 +68,12 @@
         display: flex;
         flex-direction: column;
         border-radius: 1rem;
-        transition: opacity 0.2s, backdrop-filter 0.2s, transform 0.2s, background-color 0.2s;
-        background-color: var(--low-contrast-60);
+        transition: opacity 0.2s, backdrop-filter 0.2s, transform 0.2s, background-color 0.2s, border 0.2s;
+        background-color: var(--low-contrast-30);
         backdrop-filter: blur(5rem);
         padding: 0.5rem;
         overflow: hidden;
+        border: solid 0.1rem var(--low-contrast-30);
     }
 
     html.light .tile {
@@ -84,7 +85,7 @@
     }
 
     .tile:hover {
-        background-color: var(--low-contrast-90);
+        background-color: var(--low-contrast-60);
     }
 
     .tile:nth-of-type(2){

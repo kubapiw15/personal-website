@@ -1,7 +1,7 @@
 <template>
     <div class="tile">
         <i :style="`color: ${color};`" :class='`${icon}`'></i> 
-        <h4 class="text">{{ text }}</h4>
+        <h3 class="text">{{ text }}</h3>
         <div class="shadow" :style="`background-color: ${color};`"></div>
     </div>
 </template>
@@ -33,7 +33,7 @@ i {
     color: white;
 }
 
-h4 {
+h3 {
     font-size: 1.3rem;
     margin: 0.2rem 0 0 0.4rem;
     transition: color 0.2s;
@@ -68,7 +68,7 @@ html.light .shadow {
         justify-content: center
     }
 
-    h4 {
+    h3 {
         display: none;
     }
 

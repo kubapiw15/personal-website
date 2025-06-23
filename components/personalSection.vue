@@ -33,13 +33,13 @@
         height: 100%;
         left: -30rem;
         top: 0;
-        opacity: 0.25;
+        opacity: 0.15;
     }
 
     .shadowDeco2 {
         width: 50rem;
         height: 50rem;
-        opacity: 0.2;
+        opacity: 0.1;
         left: auto;
         top: auto;
         bottom: 0;

@@ -5,7 +5,7 @@
                 <h2 data-aos="anim-left">{{ $t('mainPage.tools1') }} <span class="additive">{{ $t('mainPage.tools2') }}</span></h2>
                 <div class="box">
                     <p data-aos="anim-up">{{ $t('mainPage.tools3') }}</p>
-                        <nuxt-link data-aos="anim-up" class="link" to="">{{ $t('mainPage.tools4') }}</nuxt-link>
+                        <nuxt-link data-aos="anim-up" class="link" :to="$localePath('tools')">{{ $t('mainPage.tools4') }}</nuxt-link>
                 </div>
             </div>
             <div class="right section" data-aos="fade">
@@ -76,9 +76,9 @@
                     text="Node.js"
                     ></Tile>
                     <Tile
-                    icon="bxl bx-go-lang"
-                    color="#00ADD8"
-                    text="GO"
+                    icon="bxl bx-express-js"
+                    color="#303030"
+                    text="Express.js"
                     ></Tile>
                     
                 </div>
@@ -162,6 +162,7 @@
         color: var(--text-main);
         transition: color 0.2s, background-color 0.2s, opacity 0.2s, transform 0.2s;
         cursor: pointer;
+        text-decoration: none;
     }
 
     .link:hover {

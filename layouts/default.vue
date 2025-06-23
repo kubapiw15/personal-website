@@ -1,7 +1,7 @@
 <template>
-    <div class="defaultLayout">
-        <nuxtPage></nuxtPage>
-        <footer></footer>
+    <div class="layout">
+        <NuxtPage></NuxtPage>
+        <Footer></Footer>
     </div>
 </template>
 
@@ -10,5 +10,13 @@
 </script>
 
 <style scoped>
+
+    .layout {
+        width: 100vw;
+        display: flex;
+        align-items: stretch;
+        justify-content: stretch;
+        flex-direction: column;
+    }
 
 </style>

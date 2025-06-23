@@ -2,6 +2,29 @@
     <NuxtLayout></NuxtLayout>
 </template>
 
+<script setup>
+
+    
+    const { t, locale } = useI18n()
+
+    useHead(() => ({
+    htmlAttrs: {
+        lang: locale.value
+    }
+    }))
+
+    import AOS from 'aos'
+
+    onMounted(()=>{
+        setTimeout(() => {
+            AOS.init({
+                once: true
+            });
+        }, 0);
+    })
+
+</script>
+
 <style>
 
     html {
@@ -20,6 +43,12 @@
         user-select: none;
         width: 100vw;
         overflow-x: hidden;
+    }
+
+    @media screen and (max-width: 1400px){
+        html {
+            font-size: 15px;
+        }
     }
 
     @media screen and (max-width: 1000px){
