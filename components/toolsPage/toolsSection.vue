@@ -2,7 +2,7 @@
     <div class="component">
         <div class="content">
             <div class="section basics">
-                <h2 data-aos="fade">{{ $t('toolsPage.title1') }}</h2>
+                <h2 class="h2" data-aos="fade">{{ $t('toolsPage.title1') }}</h2>
                 <div class="tileContainer">
                     <ToolsPageTile
                     name="HTML"
@@ -49,7 +49,7 @@
                 </div>
             </div>
             <div class="section frameworks">
-                <h2 data-aos="fade">{{ $t('toolsPage.title2') }}</h2>
+                <h2 class="h2" data-aos="fade">{{ $t('toolsPage.title2') }}</h2>
                 <div class="tileContainer">
                     <ToolsPageTile
                     name="Vue.js"
@@ -67,7 +67,7 @@
                     ></ToolsPageTile>
                     <ToolsPageTile
                     name="Tauri"
-                    icon="bxl bx-nuxt-js"
+                    icon=""
                     color="#F6AD55"
                     :description="t('toolsPage.tauri')"
                     link="https://v2.tauri.app/"
@@ -78,6 +78,74 @@
                     color="#303030"
                     :description="t('toolsPage.expressjs')"
                     link="https://expressjs.com/"
+                    ></ToolsPageTile>
+                </div>
+            </div>
+            <div class="section libraries">
+                <h2 class="h2" data-aos="fade">{{ $t('toolsPage.title3') }}</h2>
+                <div class="tileContainer">
+                    <ToolsPageTile
+                    name="Boxicons"
+                    icon="bxl bx-boxicons"
+                    color="#6c00e3"
+                    :description="t('toolsPage.boxicons')"
+                    link="https://boxicons.com/"
+                    ></ToolsPageTile>
+                    <ToolsPageTile
+                    name="Google Fonts"
+                    icon=""
+                    color="#4285F4"
+                    :description="t('toolsPage.googlefonts')"
+                    link="https://fonts.google.com/"
+                    ></ToolsPageTile>
+                    <ToolsPageTile
+                    name="AOS.js"
+                    icon="bx bx-chevron-down-circle"
+                    color="#3F51B5"
+                    :description="t('toolsPage.aos')"
+                    link="https://michalsnik.github.io/aos/"
+                    ></ToolsPageTile>
+                    <ToolsPageTile
+                    name="ScrollMotion"
+                    icon=""
+                    color="#203579"
+                    :description="t('toolsPage.scrollmotion')"
+                    link="https://scrollmotion.vercel.app/"
+                    ></ToolsPageTile>
+                    <ToolsPageTile
+                    name="PDFMake"
+                    icon="bx bxs-file"
+                    color="#D32F2F"
+                    :description="t('toolsPage.pdfmake')"
+                    link="https://www.npmjs.com/package/pdfmake"
+                    ></ToolsPageTile>
+                    <ToolsPageTile
+                    name="Chart.js"
+                    icon=""
+                    color="#FF6384"
+                    :description="t('toolsPage.chartjs')"
+                    link="https://www.chartjs.org/"
+                    ></ToolsPageTile>
+                    <ToolsPageTile
+                    name="Tailwind"
+                    icon="bxl bx-tailwind-css"
+                    color="#0EA5E9"
+                    :description="t('toolsPage.tailwind')"
+                    link="https://tailwindcss.com/"
+                    ></ToolsPageTile>
+                    <ToolsPageTile
+                    name="Pinia"
+                    icon="bxl bx-tailwind-css"
+                    color="#FFD859"
+                    :description="t('toolsPage.pinia')"
+                    link="https://pinia.vuejs.org/"
+                    ></ToolsPageTile>
+                    <ToolsPageTile
+                    name="I18n"
+                    icon="bxl bx-tailwind-css"
+                    color="#41B883"
+                    :description="t('toolsPage.i18n')"
+                    link="https://vue-i18n.intlify.dev/"
                     ></ToolsPageTile>
                 </div>
             </div>
@@ -124,11 +192,11 @@ const { t } = useI18n()
         transition: background-color 0.2s;
     }
 
-    h2 {
+    .h2 {
         color: var(--text-main);
         font-size: 1.7rem;
         margin-block: 4rem;
-        transition: color 0.2s;
+        transition: opacity 0.2s, color 0.2s;
     }
 
     .tileContainer {

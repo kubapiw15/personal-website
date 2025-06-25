@@ -2,7 +2,7 @@
     <div class="component">
         <div class="content">
             <div class="photo" data-aos="fade">
-                <NuxtImg alt="My photo" src="/img/me.webp" format="webp" class="img" />
+                <NuxtImg alt="My photo" src="/img/menobg.webp" format="webp" class="img" />
             </div>
             <div class="about">
                 <h2 data-aos="anim-left">
@@ -158,7 +158,6 @@
         .photo {
             position: absolute;
             z-index: 1;
-            background-color: gray;
             backdrop-filter: none;
             margin: 0;
             right: 0;
@@ -189,8 +188,12 @@
 
     @media screen and (max-width: 500px){
         .photo {
-            right: -4rem;
-            width: calc(50% + 8rem);
+            right: -6rem;
+            /* width: calc(50% + 8rem); */
+            width: auto;
+            height: 70%;
+            /* TODO to się przerobi */
+            background-color: var(--low-contrast-15);
         }
 
         h2:nth-of-type(2){

@@ -35,7 +35,7 @@ useSeoMeta({
 <style scoped>
 
     .page {
-        height: 100vh;
+        height: auto;
         width: 100vw;
         background-color: var(--bg);
         display: flex;
@@ -47,6 +47,9 @@ useSeoMeta({
 
     .content {
         width: 70vw;
+        min-height: 100vh;
+        max-height: 100vh;
+        height: 100vh;
         flex: 1;
         display: flex;
         box-sizing: border-box;
@@ -136,14 +139,7 @@ useSeoMeta({
 
     @media screen and (max-width: 1400px){
 
-        .page {
-            height: auto;
-        }
-
         .content {
-            min-height: 100vh;
-            max-height: 100vh;
-            height: 100vh;
             width: 85vw;
         }
 

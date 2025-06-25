@@ -10,6 +10,12 @@ export default defineNuxtConfig({
     https: true
   },
 
+  runtimeConfig: {
+    public: {
+      domain: "kubapiw.dev"
+    }
+  },
+
   modules: ['@nuxtjs/color-mode', '@nuxtjs/google-fonts', '@nuxtjs/i18n', '@vueuse/nuxt', '@nuxt/image', '@pinia/nuxt'],
   colorMode: {
     preference: 'system',
@@ -21,8 +27,14 @@ export default defineNuxtConfig({
   },
   googleFonts: {
     families: {
-      "Poppins": true,
-    }
+      Poppins: [300, 400, 500, 600],
+    },
+    display: 'swap',
+    // poniżej opcjonalne, ale zalecane
+    preload: true,
+    preconnect: true,
+    download: true, // jeśli chcesz osadzić lokalnie (zalecane przy produkcji)
+    inject: true
   },
   
   i18n: {
@@ -40,9 +52,18 @@ export default defineNuxtConfig({
       fallbackLocale: 'en' // Język domyślny, jeśli przeglądarka ma nieobsługiwany język
     }
   },
-  app: {
-    head: {
-
+    nitro: {
+    routeRules: {
+      "/_nuxt/**": {
+        headers: {
+          "cache-control": "public, max-age=604800, immutable"
+        }
+      },
+      "/img/**": {
+        headers: {
+          "cache-control": "public, max-age=604800, immutable"
+        }
+      }
     }
   }
 })

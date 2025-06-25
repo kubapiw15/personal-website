@@ -1,7 +1,12 @@
 <template>
     <div class="tile" data-aos="anim-up">
-        <div class="left" :style="`background-color: ${color};`" v-if="name == 'Tauri'">
-            <div class="iconAlt"></div>
+        <div class="left" :style="`background-color: ${color};`" v-if="['Tauri', 'Google Fonts', 'ScrollMotion', 'Chart.js', 'Pinia', 'I18n'].includes(name)">
+            <div class="iconAlt iconTauri" v-if="name == 'Tauri' "></div>
+            <div class="iconAlt iconGoogleFonts" v-if="name == 'Google Fonts' "></div>
+            <div class="iconAlt iconScrollMotion" v-if="name == 'ScrollMotion' "></div>
+            <div class="iconAlt iconChartJs" v-if="name == 'Chart.js' "></div>
+            <div class="iconAlt iconPinia" v-if="name == 'Pinia' "></div>
+            <div class="iconAlt iconI18n" v-if="name == 'I18n' "></div>
         </div>
         <div class="left" :style="`background-color: ${color};`" v-else>
             <i class="icon" :class="icon"></i>
@@ -86,9 +91,37 @@ const { icon, name, description, color, link } = defineProps(['icon', 'name', 'd
         width: 3rem;
         height: 3rem;
         background-color: var(--bg);
+        transition: background-color 0.2s;
+    }
+
+    .iconTauri {
         -webkit-mask: url('/img/icons/tauri.svg') no-repeat center;
         mask: url('/img/icons/tauri.svg') no-repeat center;
-        transition: background-color 0.2s;
+    }
+
+    .iconGoogleFonts {
+        -webkit-mask: url('/img/icons/googlefonts.svg') no-repeat center;
+        mask: url('/img/icons/googlefonts.svg') no-repeat center;
+    }
+
+    .iconScrollMotion {
+        -webkit-mask: url('/img/logo.svg') no-repeat center;
+        mask: url('/img/logo.svg') no-repeat center;
+    }
+
+    .iconChartJs {
+        -webkit-mask: url('/img/icons/chartjs.svg') no-repeat center;
+        mask: url('/img/icons/chartjs.svg') no-repeat center;
+    }
+
+    .iconPinia {
+        -webkit-mask: url('/img/icons/pinia.svg') no-repeat center;
+        mask: url('/img/icons/pinia.svg') no-repeat center;
+    }
+
+    .iconI18n {
+        -webkit-mask: url('/img/icons/i18n.svg') no-repeat center;
+        mask: url('/img/icons/i18n.svg') no-repeat center;
     }
 
     @media screen and (max-width: 1000px){

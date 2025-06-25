@@ -2,11 +2,11 @@ export default {
     seo: {
         lang: "pl",
         mainPage: {
-            title: "kubapiw.dev - Zaprojektujmy razem Twoją aplikację!",
+            title: "Zaprojektujmy razem Twoją aplikację!",
             description: 'Tworzę strony i aplikacje, które automatyzują i wspierają Twój biznes - od podstaw, bez gotowych szablonów.',
         },
         toolsPage: {
-            title: "kubapiw.dev - Narzędzia",
+            title: "Narzędzia",
             description: 'Dowiedz się więcej o technologiach oraz rozwiązaniach, które stosuję w aplikacjach, aby zapewnić im wszystkie potrzebne funkcjonalności.',
         }
     },
@@ -16,12 +16,21 @@ export default {
             info: "Sprawdź, czy podany przez Ciebie link jest poprawny.",
         },
         other: {
-            title: "Oops, something went wrong...",
-            info: "If the error persists, please try again later."
+            title: "Ups, coś poszło nie tak...",
+            info: "Jeżeli błąd się powtórzy, spróbuj ponownie później."
         },
         return: "Wróć do strony głównej"
     },
+    footer: {
+        title1: "Nawigacja",
+        title2: "Informacje prawne",
+        title3: "Znajdź mnie",
+        legal1: "EULA",
+        legal2: "Polityka prywatności",
+        copyright: "© 2025 Jakub Piwoński. Wszelkie prawa zastrzeżone."
+    },
     mainPage: {
+        navbar0: "Strona główna",
         navbar1: "O mnie",
         navbar2: "Projekty",
         navbar3: "Kontakt",
@@ -63,6 +72,7 @@ export default {
         title1: "Podstawy",
         title2: "Frameworki",
         title3: "Biblioteki",
+        title4: "Inne narzędzia",
 
         html: "HTML to język znaczników służący do tworzenia struktury stron internetowych. Opisuje elementy jak nagłówki, tekst, obrazy i linki, interpretowane przez przeglądarkę internetową.",
         css: "CSS to język służący do stylizacji stron internetowych. Pozwala zmieniać kolory, czcionki, odstępy, układ, rozmiary, dodawać animacje i dopasować wygląd strony do różnych urządzeń.",
@@ -75,5 +85,15 @@ export default {
         nuxtjs: "Nuxt.js to framework oparty na Vue.js, który ułatwia tworzenie uniwersalnych (SSR) i statycznych aplikacji webowych. Zapewnia gotową strukturę projektu, routing, zarządzanie stanem oraz optymalizację wydajności.",
         tauri: "Tauri to framework do tworzenia lekkich, bezpiecznych i wydajnych aplikacji desktopowych. Pozwala budować natywne programy, korzystając z technologii webowych oraz frameworków takich jak Vue.js lub Nuxt.js.",
         expressjs: "Express.js to minimalistyczny i elastyczny framework dla Node.js, który ułatwia tworzenie serwerów i API. Pozwala szybko obsługiwać żądania, zarządzać integracją z bazami danych, co przyspiesza rozwój backendu aplikacji webowych.",
+
+        boxicons: "Boxicons to nowoczesny zestaw ikon, które wykorzystuję do tworzenia czytelnych i estetycznych stron internetowych. Są lekkie, eleganckie i świetnie wyglądają zarówno na komputerze, jak i na telefonie.",
+        googlefonts: "Google Fonts to darmowa biblioteka profesjonalnych czcionek, dzięki której Twoja strona wygląda nowocześnie, jest czytelna na każdym urządzeniu i idealnie dopasowana do charakteru Twojej marki.",
+        aos: "AOS to lekka biblioteka JavaScript, która pozwala na łatwe dodanie efektów animacji do elementów strony w momencie, gdy użytkownik do nich przewija. Dzięki temu strona wygląda bardziej dynamicznie i nowocześnie, a odwiedzający są bardziej zaangażowani.",
+        scrollmotion: "ScrollMotion to minimalistyczna, autorska biblioteka JavaScript stworzona jako alternatywa dla AOS, idealna do małych i średnich projektów, gdzie potrzebujesz prostych, ale elastycznych animacji na scroll.",
+        tailwind: "Tailwind CSS to lekki, wydajny framework CSS oparty na klasach narzędziowych (utility-first), który pozwala szybko tworzyć nowoczesne, responsywne interfejsy bez potrzeby pisania tradycyjnych arkuszy stylów.",
+        pdfmake: "PDFMake to biblioteka JavaScript umożliwiająca dynamiczne generowanie plików PDF w przeglądarce. Dzięki rozbudowanemu systemowi deklaratywnemu, pozwala na tworzenie złożonych dokumentów bez konieczności korzystania z zewnętrznych narzędzi.",
+        chartjs: "Chart.js to wydajna i estetyczna biblioteka JavaScript, która umożliwia prezentowanie danych w formie interaktywnych wykresów. Dzięki niej można w czytelny sposób przedstawić statystyki, wyniki, raporty lub dane analityczne.",
+        pinia: "Pinia to nowoczesne narzędzie do zarządzania danymi w aplikacjach webowych. Umożliwia sprawne kontrolowanie informacji na stronie - od produktów w sklepie po dane użytkownika - dzięki czemu wszystko działa szybko, spójnie i bez błędów.",
+        i18n: "I18n ułatwia tworzenie stron i aplikacji dostępnych w wielu językach. Dzięki temu Twoja strona może dotrzeć do szerszego grona klientów. Profesjonalne tłumaczenia, przełączanie języków w locie i łatwa rozbudowa w przyszłości.",
     }
 }

@@ -11,27 +11,17 @@
 <script setup>
 
 const { t } = useI18n()
+const { domain } = useRuntimeConfig().public
 
 useSeoMeta({
-  title: t('seo.mainPage.title'),
+  title: `${domain} - ${t('seo.mainPage.title')}`,
   description: t('seo.mainPage.description'),
-  ogTitle: t('seo.mainPage.title'),
+  ogTitle: `${domain} - ${t('seo.mainPage.title')}`,
   ogDescription: t('seo.mainPage.description')
 })
 
 definePageMeta({
     keepalive: true,
-    scrollToTop: false
-})
-
-import AOS from 'aos'
-
-onMounted(()=>{
-    setTimeout(() => {
-        AOS.init({
-            once: true
-        });
-    }, 0);
 })
 
 </script>
@@ -46,7 +36,6 @@ onMounted(()=>{
     align-items: center;
     background-color: var(--bg);
     transition: background-color 0.2s;
-    /* position: absolute; */
 }
 
 

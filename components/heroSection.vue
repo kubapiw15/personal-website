@@ -5,7 +5,6 @@
             <p>{{ $t('mainPage.more') }}</p>
             <div class="animation">
                 <div class="scroll"></div>
-                <!-- TODO shadow inset -->
                 <i class='bx bx-chevrons-down' ></i>
             </div>
         </div>
@@ -76,6 +75,7 @@ onMounted(()=>{
         font-size: 3rem;
         transition: color 0.2s;
         margin-top: -5rem;
+        font-weight: 800;
     }
 
     .more {

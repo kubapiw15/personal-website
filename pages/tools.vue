@@ -32,12 +32,24 @@
 
 const { t } = useI18n()
 
+const { domain } = useRuntimeConfig().public
+
 useSeoMeta({
-  title: t('seo.toolsPage.title'),
+  title: `${domain} - ${t('seo.toolsPage.title')}`,
   description: t('seo.toolsPage.description'),
-  ogTitle: t('seo.toolsPage.title'),
+  ogTitle: `${domain} - ${t('seo.toolsPage.title')}`,
   ogDescription: t('seo.toolsPage.description')
 })
+
+
+    import AOS from 'aos'
+
+    onMounted(()=>{
+        window.scrollTo(0, 0)
+        setTimeout(() => {
+            AOS.refresh()
+        }, 0);
+    })
 
 </script>
 

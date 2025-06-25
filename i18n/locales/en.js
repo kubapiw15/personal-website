@@ -2,11 +2,11 @@ export default {
     seo: {
         lang: "en",
         mainPage: {
-            title: "kubapiw.dev - Let's just talk about Your web app!",
+            title: "Let's just talk about Your web app!",
             description: 'I create websites and apps that automate and enhance your business presence - built from scratch, no templates.'
         },
         toolsPage: {
-            title: "kubapiw.dev - Tools",
+            title: "Tools",
             description: 'Learn more about the technologies and solutions I use in applications to provide them with all the necessary functionalities.',
         }
     },
@@ -21,7 +21,17 @@ export default {
         },
         return: "Go back to the homepage"
     },
+    footer: {
+        title1: "Navigation",
+        title2: "Legal",
+        title3: "Find me",
+        legal1: "EULA",
+        legal2: "Privacy Policy",
+        copyright: "© 2025 Jakub Piwoński. All rights reserved."
+
+    },
     mainPage: {
+        navbar0: "Main page",
         navbar1: "About me",
         navbar2: "Projects",
         navbar3: "Contact",
@@ -61,6 +71,7 @@ export default {
         title1: "Basics",
         title2: "Frameworks",
         title3: "Libraries",
+        title4: "Other tools",
 
         html: "HTML is a markup language used to create the structure of web pages. It describes elements like headings, text, images, and links, interpreted by the web browser.",
         css: "CSS is a language used to style web pages. It allows changing colors, fonts, spacing, layout, sizes, adding animations, and adapting the page's appearance for different devices.",
@@ -73,5 +84,15 @@ export default {
         nuxtjs: "Nuxt.js is a framework based on Vue.js that simplifies building universal (SSR) and static web applications. It provides a ready project structure, routing, state management, and performance optimization.",
         tauri: "Tauri is a framework for creating lightweight, secure, and efficient desktop applications. It allows building native programs using web technologies and frameworks like Vue.js or Nuxt.js.",
         expressjs: "Express.js is a minimalist and flexible framework for Node.js that simplifies the creation of servers and APIs. It enables quick request handling and integration with databases, speeding up backend development for web applications.",
+    
+        boxicons: "Boxicons is a modern set of icons I use to create clean and visually appealing websites. They are lightweight, elegant, and look great on both desktop and mobile devices, giving your site a polished look everywhere.",
+        googlefonts: "Google Fonts is a free library of professional-quality fonts that make your website look modern and readable on all devices. It also helps your site's typography perfectly match your brand's character and style.",
+        aos: "AOS is a lightweight JavaScript library that lets you easily add animations triggered when users scroll to elements. This makes your website feel more dynamic and modern, increasing visitor engagement.",
+        scrollmotion: "ScrollMotion is a minimalist, custom-built JavaScript library designed as an alternative to AOS. It's ideal for small and medium projects needing simple yet flexible scroll-based animations without extra complexity.",
+        tailwind: "Tailwind CSS is a lightweight, utility-first CSS framework that allows rapid development of modern, responsive interfaces without writing traditional CSS stylesheets, making your work faster and more efficient.",
+        pdfmake: "PDFMake is a JavaScript library for dynamically generating PDF documents directly in the browser. It provides a rich declarative syntax that lets you create complex documents without external tools.",
+        chartjs: "Chart.js is a fast and visually appealing JavaScript library for displaying data as interactive charts. It helps present statistics, results, reports, and analytics clearly and engagingly for your users.",
+        pinia: "Pinia is a modern state management library for web apps. It helps efficiently organize and control all app data - from products to user info - ensuring your app runs smoothly and consistently.",
+        i18n: "Vue I18n makes building multilingual websites and apps simple. It allows you to reach a wider audience by providing professional translations, on-the-fly language switching, and easy expansion for more languages.",
     }
 }
