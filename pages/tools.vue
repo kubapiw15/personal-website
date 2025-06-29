@@ -25,6 +25,17 @@
             </div>
           </div>
           <ToolsPageToolsSection></ToolsPageToolsSection>
+          <div class="epilogue">
+            <div class="content">
+              <div class="section left">
+                <h2 data-aos="fade">Co dalej?</h2>
+                <p data-aos="anim-left">Każdy projekt to dla mnie okazja do nauki i wdrażania lepszych rozwiązań - dzięki temu tworzę strony i aplikacje, które odpowiadają współczesnym standardom i oczekiwaniom użytkowników.</p>
+              </div>
+              <div class="section right">
+                <NuxtImg data-aos="fade" class="img" src="/img/undraw_dev-productivity.svg" alt="Developer"></NuxtImg>
+              </div>
+            </div>
+          </div>
         </div>
 </template>
 
@@ -53,7 +64,7 @@ useSeoMeta({
 
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 
 .page {
     display: flex;
@@ -206,6 +217,42 @@ h1 {
   animation-duration: 9s;
 }
 
+.epilogue {
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-block: 5rem 8rem;
+
+  .section {
+    width: 50%;
+  }
+
+  h2 {
+    font-size: 2rem;
+    color: var(--text-main);
+    transition: color 0.2s, opacity 0.2s;
+  }
+
+  p {
+    margin-top: 3rem;
+    transition: color 0.2s, opacity 0.2s, transform 0.2s;
+  }
+
+  .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img {
+    width: 80%;
+  }
+
+}
+
+
+
 @keyframes cube {
   0% {
     transform: translateX(-10%);
@@ -234,23 +281,53 @@ h1 {
     display: flex;
   }
 
-  .content {
-    width: 95%;
+    .content {
+      width: 95%;
+      max-width: 600px;
+    }
+
+  .header {
+
+    .left {
+      width: 80%;
+    }
+
+    .right {
+      width: 50%;
+      position: absolute;
+      right: 0;
+      top: 2rem;
+    }
   }
 
-  .left {
-    width: 80%;
+  .epilogue {
+
+      overflow: hidden;
+
+    .content {
+      position: relative;
+    }
+
+    .right {
+      position: absolute;
+      right: -25%;
+      width: 50%;
+    }
+
+    .img {
+      height: 100%;
+      width: auto;
+    }
+
+    .left {
+      width: 100%;
+    }
+
+    p {
+      width: 70%;
+    }
   }
 
-  .right {
-    width: 50%;
-    position: absolute;
-    right: 0;
-    top: 2rem;
-  }
-}
-
-@media screen and (max-width: 1000px) {
   .cmcontainer, .back {
     position: absolute;
   }

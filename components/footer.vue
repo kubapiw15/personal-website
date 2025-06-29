@@ -152,6 +152,7 @@ const { domain } = useRuntimeConfig().public
         font-size: 0.9rem;
         color: var(--text-lighter);
         margin: 0;
+        transition: color 0.2s;
     }
 
     @media screen and (max-width: 1400px){
