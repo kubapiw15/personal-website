@@ -29,12 +29,12 @@ const { icon, text, color } = defineProps(['icon', 'text', 'color'])
 }
 
 i {
-    font-size: 5rem;
+    font-size: 4rem;
     color: white;
 }
 
 h3 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     margin: 0.2rem 0 0 0.4rem;
     transition: color 0.2s;
     color: var(--text-dark);
@@ -73,6 +73,7 @@ html.light .shadow {
     }
 
     i {
+        font-size: 5rem;
         margin: 0;
     }
 }

@@ -59,7 +59,7 @@ const { domain } = useRuntimeConfig().public
     }
 
     .content {
-        width: 80%;
+        width: 70%;
         height: 100%;
         
         display: flex;

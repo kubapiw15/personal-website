@@ -28,8 +28,8 @@
           <div class="epilogue">
             <div class="content">
               <div class="section left">
-                <h2 data-aos="fade">Co dalej?</h2>
-                <p data-aos="anim-left">Każdy projekt to dla mnie okazja do nauki i wdrażania lepszych rozwiązań - dzięki temu tworzę strony i aplikacje, które odpowiadają współczesnym standardom i oczekiwaniom użytkowników.</p>
+                <h2 data-aos="fade">{{ $t('toolsPage.epilogue1') }}</h2>
+                <p data-aos="anim-up">{{ $t('toolsPage.epilogue2') }}</p>
               </div>
               <div class="section right">
                 <NuxtImg data-aos="fade" class="img" src="/img/undraw_dev-productivity.svg" alt="Developer"></NuxtImg>
@@ -109,7 +109,6 @@ useSeoMeta({
 .back p {
   margin: 0;
   font-size: 0.9rem;
-  transition: opacity 0.2s;
   pointer-events: none;
   overflow: hidden;
   white-space: nowrap;
@@ -231,12 +230,12 @@ h1 {
   h2 {
     font-size: 2rem;
     color: var(--text-main);
-    transition: color 0.2s, opacity 0.2s;
+    transition: color 0.2s, opacity 0.5s;
   }
 
   p {
     margin-top: 3rem;
-    transition: color 0.2s, opacity 0.2s, transform 0.2s;
+    transition: color 0.2s, opacity 0.5s, transform 0.5s;
   }
 
   .right {
@@ -247,6 +246,7 @@ h1 {
 
   .img {
     width: 80%;
+    transition: opacity 0.5s;
   }
 
 }
@@ -282,7 +282,7 @@ h1 {
   }
 
     .content {
-      width: 95%;
+      width: 90%;
       max-width: 600px;
     }
 

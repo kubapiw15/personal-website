@@ -196,7 +196,7 @@ const { t } = useI18n()
         color: var(--text-main);
         font-size: 1.7rem;
         margin-block: 4rem;
-        transition: opacity 0.2s, color 0.2s;
+        transition: opacity 0.5s, color 0.2s;
     }
 
     .tileContainer {

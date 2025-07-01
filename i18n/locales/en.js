@@ -51,12 +51,11 @@ export default {
         about7: "More about me",
 
         projects1: "What am I creating?",
-        projects2: "Company and personal websites",
-        projects2desc: "Professionally crafted websites representing businesses and individuals. Each site is unique, responsive, and tailored to specific needs, ensuring a consistent brand image and a modern online presence—built without the use of ready-made templates.",
-        projects3: "Web applications that support and automate work",
-        projects3desc: "Custom-built applications designed to automate and streamline daily business processes. Each solution is developed from scratch in collaboration with the client to meet specific requirements and enhance standardization and operational efficiency.",
-        projects4: "Custom-built systems designed specifically for you",
-        projects4desc: "Bespoke solutions created to address specific business requirements. These systems are fully adapted to client needs, offering flexibility, efficiency, and easy integration with existing processes.",
+        projects2: "The most important thing for me is close cooperation with the client at every stage of the project. This allows me to fully understand their needs, expectations, and the specifics of their industry. I don’t use ready-made solutions or templates – each project is created individually and precisely tailored to the client's requirements. Only this approach makes it possible to deliver functional, aesthetic, and effective solutions that truly work and bring measurable benefits.",
+        projectsLink: "See completed projects",
+        projects3: "Company and personal websites",
+        projects4: "Web applications that support and automate work",
+        projects5: "Custom-built systems designed specifically for you",
 
         tools1: "Let's find the right set of tools for",
         tools2: "your project.",
@@ -94,5 +93,8 @@ export default {
         chartjs: "Chart.js is a fast and visually appealing JavaScript library for displaying data as interactive charts. It helps present statistics, results, reports, and analytics clearly and engagingly for your users.",
         pinia: "Pinia is a modern state management library for web apps. It helps efficiently organize and control all app data - from products to user info - ensuring your app runs smoothly and consistently.",
         i18n: "Vue I18n makes building multilingual websites and apps simple. It allows you to reach a wider audience by providing professional translations, on-the-fly language switching, and easy expansion for more languages.",
+        
+        epilogue1: "What's next?",
+        epilogue2: "Every project is an opportunity for me to learn and implement better solutions - this way I create websites and applications that meet modern standards and user expectations.",
     }
 }

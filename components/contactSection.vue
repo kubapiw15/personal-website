@@ -38,7 +38,7 @@
     }
 
     .content {
-        width: 80%;
+        width: 70%;
         display: flex;
         align-items: flex-start;
         justify-content: space-between;

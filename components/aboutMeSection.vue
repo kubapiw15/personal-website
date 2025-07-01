@@ -38,14 +38,14 @@
         justify-content: stretch;
         align-items: flex-start;
         position: relative;
-        width: 80%;
+        width: 70%;
         padding-bottom: 1rem;
     }
 
     .photo {
         background-color: var(--low-contrast-30);
-        height: 40rem;
-        width: 30rem;
+        height: 37rem;
+        width: 28rem;
         border-radius: 2rem;
         margin: 3rem 8rem 3rem 0rem;
         position: relative;
@@ -77,9 +77,9 @@
     h2 {
         transition: color 0.2s, transform 0.5s, opacity 0.5s;
         color: var(--text-main);
-        font-size: 2.5em;
+        font-size: 2.2em;
         margin: 0;
-        line-height: 6rem;
+        line-height: 5rem;
     }
 
     .additive {
@@ -98,7 +98,7 @@
         border-radius: 10rem;
         cursor: pointer;
         display: inline-block;
-        transition: opacity 0.2s, transform 0.2s, border 0.2s, background-color 0.2s, color 0.2s;
+        transition: opacity 0.5s, transform 0.5s, border 0.2s, background-color 0.2s, color 0.2s;
         margin-block: 0.5rem;
         white-space: nowrap;
     }
@@ -138,11 +138,6 @@
         h2 {
             font-size: 2rem;
             line-height: 5rem;
-        }
-
-        .shadow {
-            left: 0;
-            transform: translateX(-45%);
         }
 
         .photo {

@@ -108,7 +108,7 @@
         justify-content: stretch;
         align-items: center;
         position: relative;
-        width: 80%;
+        width: 70%;
         margin-top: 5rem;
         overflow: hidden
     }
@@ -129,44 +129,44 @@
         
         mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, black 30%, black 70%, rgba(0, 0, 0, 0) 100%);
         max-height: 90vh;
+        transition: opacity 0.5s;
     }
 
     h2 {
         color: var(--text-main);
-        transition: color 0.2s, opacity 0.2s, transform 0.2s;
-        font-size: 2.5rem;
+        transition: color 0.2s, opacity 0.5s, transform 0.5s;
+        font-size: 2.2rem;
         line-height: 5rem;
-        margin-left: 1rem;
+        margin-bottom: 3rem;
     }
 
     p {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         color: var(--text-lighter);
         flex: 6;
-        transition: color 0.2s, opacity 0.2s, transform 0.2s;
+        transition: color 0.2s, opacity 0.5s, transform 0.5s;
     }
 
     .box {
         display: flex;
         justify-content: stretch;
         align-items: center;
-        margin-left: 2rem;
     }
 
     .link {
-        background-color: var(--low-contrast-60);
-        margin-inline: 3rem;
-        font-size: 1.2rem;
+        background-color: var(--low-contrast-30);
+        margin-inline: 2rem;
+        font-size: 1.1rem;
         padding: 1rem 2.5rem;
         border-radius: 20rem;
         color: var(--text-main);
-        transition: color 0.2s, background-color 0.2s, opacity 0.2s, transform 0.2s;
+        transition: color 0.2s, background-color 0.2s, opacity 0.5s, transform 0.5s;
         cursor: pointer;
         text-decoration: none;
     }
 
     .link:hover {
-        background-color: var(--low-contrast-90);
+        background-color: var(--low-contrast-60);
     }
 
     .tileContainer {
@@ -194,7 +194,6 @@
 
         .box {
             flex-direction: column;
-            margin-left: 1rem;
             align-items: flex-start;
         }
 
@@ -216,7 +215,7 @@
 
         .right {
             position: absolute;
-            top: 15rem;
+            top: 18rem;
             bottom: 0
         }
 

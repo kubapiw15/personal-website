@@ -50,12 +50,11 @@ export default {
         about7: "Więcej o mnie",
 
         projects1: "Co tworzę?",
-        projects2: "Strony internetowe dla firm i osób prywatnych",
-        projects2desc: "Profesjonalnie tworzone od podstaw strony internetowe, które reprezentują firmy i osoby prywatne. Każda witryna jest unikalna, responsywna i dostosowana do indywidualnych potrzeb, zapewniając spójny wizerunek i nowoczesną prezentację w sieci bez użycia gotowych szablonów.",
-        projects3: "Aplikacje webowe wspierające i automatyzujące pracę",
-        projects3desc: "Dedykowane aplikacje zaprojektowane w celu automatyzacji i usprawnienia codziennych procesów biznesowych. Każde rozwiązanie powstaje od zera we współpracy z klientem, aby idealnie odpowiadać specyficznym wymaganiom i zwiększać standaryzację oraz efektywność pracy.",
-        projects4: "Dedykowane systemy dopasowane do Twoich potrzeb",
-        projects4desc: "Tworzone na zamówienie rozwiązania, które odpowiadają na specyficzne potrzeby biznesowe. Oferowane systemy są w pełni dostosowane do wymagań klienta, zapewniając elastyczność, efektywność i łatwość w integracji z istniejącymi procesami.",
+        projects2: "Najważniejsza jest dla mnie bliska współpraca z klientem na każdym etapie projektu. Dzięki temu mogę dokładnie zrozumieć jego potrzeby, oczekiwania oraz specyfikę branży, w której działa. Nie korzystam z gotowych rozwiązań ani szablonów - każdy projekt tworzę indywidualnie, dostosowując go precyzyjnie do wymagań klienta. Tylko takie podejście pozwala stworzyć funkcjonalne, estetyczne i efektywne rozwiązania, które naprawdę działają i przynoszą wymierne korzyści.",
+        projectsLink: "Zobacz gotowe rozwiązania",
+        projects3: "Strony internetowe dla firm i osób prywatnych",
+        projects4: "Aplikacje webowe wspierające i automatyzujące pracę",
+        projects5: "Dedykowane systemy dopasowane do Twoich potrzeb",
     
         tools1: "Dobierzmy zestaw narzędzi pasujących do",
         tools2: "Twojego projektu.",
@@ -95,5 +94,8 @@ export default {
         chartjs: "Chart.js to wydajna i estetyczna biblioteka JavaScript, która umożliwia prezentowanie danych w formie interaktywnych wykresów. Dzięki niej można w czytelny sposób przedstawić statystyki, wyniki, raporty lub dane analityczne.",
         pinia: "Pinia to nowoczesne narzędzie do zarządzania danymi w aplikacjach webowych. Umożliwia sprawne kontrolowanie informacji na stronie - od produktów w sklepie po dane użytkownika - dzięki czemu wszystko działa szybko, spójnie i bez błędów.",
         i18n: "I18n ułatwia tworzenie stron i aplikacji dostępnych w wielu językach. Dzięki temu Twoja strona może dotrzeć do szerszego grona klientów. Profesjonalne tłumaczenia, przełączanie języków w locie i łatwa rozbudowa w przyszłości.",
+
+        epilogue1: "Co dalej?",
+        epilogue2: "Każdy projekt to dla mnie okazja do nauki i wdrażania lepszych rozwiązań - dzięki temu tworzę strony i aplikacje, które odpowiadają współczesnym standardom i oczekiwaniom użytkowników.",
     }
 }

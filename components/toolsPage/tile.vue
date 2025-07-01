@@ -35,7 +35,7 @@ const { icon, name, description, color, link } = defineProps(['icon', 'name', 'd
         width: calc(100% / 2 - 2rem);
         box-sizing: border-box;
         overflow: hidden;
-        transition: opacity 0.2s, transform 0.2s;
+        transition: opacity 0.5s, transform 0.5s;
         box-shadow: 0 0 5rem transparent;
     }
 
@@ -51,7 +51,7 @@ const { icon, name, description, color, link } = defineProps(['icon', 'name', 'd
         color: var(--text-main);
         font-size: 1.5rem;
         line-height: 3rem;
-        transition: color 0.2s, opacity 0.2s;
+        transition: color 0.2s;
         font-weight: 500;
         text-decoration: none;
     }

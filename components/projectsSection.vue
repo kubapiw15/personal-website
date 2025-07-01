@@ -1,31 +1,38 @@
 <template>
     <div class="component">
         <div class="content">  
-            <h2 data-aos="fade">{{ $t('mainPage.projects1') }}</h2>
-            <div class="container">
-
+            <div class="left section">
+                <h2 class="h2" data-aos="fade">{{ $t('mainPage.projects1') }}</h2>
+                <p data-aos="anim-left" class="desc">{{ $t('mainPage.projects2') }}</p>
+                <NuxtLink data-aos="anim-up" class="link">{{ $t('mainPage.projectsLink') }}</NuxtLink>
+            </div>
+            <div class="right section">
                 <div class="tile" data-aos="anim-up">
-                    <div class="topSection">
-                        <NuxtImg alt="pie chart" class="img" src="/img/undraw_pie-chart.svg"></NuxtImg>
+                    <div class="imgContainer">
+                        <NuxtImg alt="personal app" class="img" src="/img/undraw_landing.svg"></NuxtImg>
+                    </div>
+                    <div class="box">
                         <h3>{{ $t('mainPage.projects3') }}</h3>
                     </div>
-                    <p>{{ $t('mainPage.projects3desc') }}</p>
                 </div>
                 <div class="tile" data-aos="anim-up">
-                    <div class="topSection">
-                        <NuxtImg alt="custom app" class="img" src="/img/undraw_real-time-sync.svg"></NuxtImg>
+                    <div class="imgContainer">
+                        <NuxtImg alt="pie chart" class="img" src="/img/undraw_pie-chart.svg"></NuxtImg>
+                    </div>
+                    <div class="box">
                         <h3>{{ $t('mainPage.projects4') }}</h3>
                     </div>
-                    <p>{{ $t('mainPage.projects4desc') }}</p>
                 </div>
                 <div class="tile" data-aos="anim-up">
-                    <div class="topSection">
-                        <NuxtImg alt="personal app" class="img" src="/img/undraw_landing.svg"></NuxtImg>
-                        <h3>{{ $t('mainPage.projects2') }}</h3>
+                    <div class="imgContainer">
+                        <NuxtImg alt="custom app" class="img" src="/img/undraw_real-time-sync.svg"></NuxtImg>
                     </div>
-                    <p>{{ $t('mainPage.projects2desc') }}</p>
+                    <div class="box">
+                        <h3>{{ $t('mainPage.projects5') }}</h3>
+                    </div>
                 </div>
             </div>
+            
         </div>
     </div>
 </template>
@@ -45,125 +52,131 @@
 
     .content {
         display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        flex-direction: column;
-        position: relative;
-        width: calc(80% + 2rem);
+        justify-content: stretch;
+        align-items: stretch;
+        width: 70%;
         margin-top: 4rem;
     }
 
-    .container {
-        display: flex;
-        justify-content: stretch;
-        align-items: stretch;
-        width: 100%;
-        flex-wrap: wrap;
+    .section {
+        height: 100%;
+    }
+
+    .left {
+        width: 50%;
+    }
+
+    .right {
+        width: 50%;
+        box-sizing: border-box;
+        padding-left: 3rem;
+    }
+
+    .h2 {
+        font-size: 2.2rem;
+        color: var(--text-main);
+        transition: color 0.2s, opacity 0.5s;
+        margin-bottom: 3rem;
+    }
+
+    .desc {
+        color: var(--text-lighter);
+        font-size: 1.1rem;
+        margin-bottom: 3rem;
+        transition: color 0.2s, opacity 0.5s, transform 0.5s;
+    }
+
+    .link {
+        background-color: var(--low-contrast-30);
+        font-size: 1.1rem;
+        padding: 1rem 2.5rem;
+        border-radius: 20rem;
+        color: var(--text-main);
+        transition: color 0.2s, background-color 0.2s, opacity 0.5s, transform 0.5s;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .link:hover {
+        background-color: var(--low-contrast-60);
     }
 
     .tile {
         flex: 1;
-        min-width: calc(30% - 2rem);
-        margin: 1rem 1rem;
+        margin: 1rem 0;
         display: flex;
-        flex-direction: column;
+        align-items: center;
+        justify-content: stretch;
         border-radius: 1rem;
-        transition: opacity 0.2s, backdrop-filter 0.2s, transform 0.2s, background-color 0.2s, border 0.2s;
+        transition: opacity 0.5s, backdrop-filter 0.2s, transform 0.5s, background-color 0.2s, border 0.2s;
         background-color: var(--low-contrast-30);
         backdrop-filter: blur(5rem);
-        padding: 0.5rem;
         overflow: hidden;
         border: solid 0.1rem var(--low-contrast-30);
-    }
-
-    html.light .tile {
-        background-color: var(--low-contrast-30);
-    }
-
-    html.light .tile:hover {
-        background-color: var(--low-contrast-60);
     }
 
     .tile:hover {
         background-color: var(--low-contrast-60);
     }
 
-    .tile:nth-of-type(2){
-        animation-delay: 0.2s;
-    }
-
-    .tile:nth-of-type(3){
-        animation-delay: 0.4s;
-    }
-
-    h2 {
-        font-size: 2rem;
-        color: var(--text-main);
-        transition: color 0.2s, opacity 0.2s;
-        margin-bottom: 4rem;
-    }
-
-    .topSection {
-        display: flex;
-        justify-content: flex-end;
-        position: relative;
-        min-height: 8rem;
-    }
-
-    .img {
-        height: 110%;
-        position: absolute;
-        right: 65%;
-        z-index: 2;
-        bottom: 0;
-        transition: scale 0.2s;
-    }
-
-    .tile:hover .img {
-        scale: 1.05;
-    }
-
 
     h3 {
         color: var(--text-dark);
-        width: 55%;
         z-index: 2;
         font-size: 1.3rem;
         font-weight: 500;
         transition: color 0.2s;
     }
 
-    p {
-        margin: 2rem 2rem 1rem 2rem;
+    .tile p {
         color: var(--text-lighter);
         font-size: 1.1rem;
     }
 
+    .box {
+        display: flex;
+        flex: 1;
+        padding: 0.5rem 0.5rem 0.5rem 2rem;
+    }
+
+    .imgContainer {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        overflow: hidden;
+        height: 10rem;
+        width: 7rem;
+    }
+
+    .img {
+        height: 95%;
+    }
+
     @media screen and (max-width: 1400px){
-        .tile {
-            min-width: calc(45% - 2rem);
-        }
 
         .content {
-            width: calc(90% + 2rem);
-        }
-
-        p {
-            margin: 1rem 1rem 0.5rem 1rem;
+            width: 90%;
         }
     }
 
     @media screen and (max-width: 1000px){
-        h3 {
-            font-size: 1.4rem;
-        }
-    }
-
-    @media screen and (max-width: 750px){
-        .tile {
-            min-width: calc(80% - 2rem);
+        .content {
+            flex-direction: column;
         }
 
+        .right {
+            padding: 0;
+            padding-top: 2rem;
+        }
+
+        .imgContainer {
+            height: 7rem;
+            width: 5rem;
+        }
+
+        .section {
+            width: 100%;
+        }
     }
 
 </style>
