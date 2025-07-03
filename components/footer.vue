@@ -7,7 +7,7 @@
                     <div class="links">
                         <NuxtLink class="link" :to="$localePath('/')">{{ $t('mainPage.navbar0') }}</NuxtLink>
                         <NuxtLink class="link" :to="''">{{ $t('mainPage.navbar1') }}</NuxtLink>
-                        <NuxtLink class="link" :to="''">{{ $t('mainPage.navbar2') }}</NuxtLink>
+                        <NuxtLink class="link" :to="$localePath('/projects')">{{ $t('mainPage.navbar2') }}</NuxtLink>
                         <NuxtLink class="link" :to="''">{{ $t('mainPage.navbar3') }}</NuxtLink>
                         <NuxtLink class="link" :to="$localePath('/tools')">{{ $t('mainPage.navbar4') }}</NuxtLink>
                         <NuxtLink class="link" :to="''">{{ $t('mainPage.navbar5') }}</NuxtLink>

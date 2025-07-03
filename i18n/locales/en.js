@@ -69,7 +69,7 @@ export default {
 
         title1: "Basics",
         title2: "Frameworks",
-        title3: "Libraries",
+        title3: "Libraries and tools",
         title4: "Other tools",
 
         html: "HTML is a markup language used to create the structure of web pages. It describes elements like headings, text, images, and links, interpreted by the web browser.",
@@ -85,6 +85,7 @@ export default {
         expressjs: "Express.js is a minimalist and flexible framework for Node.js that simplifies the creation of servers and APIs. It enables quick request handling and integration with databases, speeding up backend development for web applications.",
     
         boxicons: "Boxicons is a modern set of icons I use to create clean and visually appealing websites. They are lightweight, elegant, and look great on both desktop and mobile devices, giving your site a polished look everywhere.",
+        vitepwa: "Vite PWA helps turn a website into a Progressive Web App that works offline, loads faster by caching data, and can be installed on devices like a native app—improving user experience.",
         googlefonts: "Google Fonts is a free library of professional-quality fonts that make your website look modern and readable on all devices. It also helps your site's typography perfectly match your brand's character and style.",
         aos: "AOS is a lightweight JavaScript library that lets you easily add animations triggered when users scroll to elements. This makes your website feel more dynamic and modern, increasing visitor engagement.",
         scrollmotion: "ScrollMotion is a minimalist, custom-built JavaScript library designed as an alternative to AOS. It's ideal for small and medium projects needing simple yet flexible scroll-based animations without extra complexity.",
@@ -96,5 +97,24 @@ export default {
         
         epilogue1: "What's next?",
         epilogue2: "Every project is an opportunity for me to learn and implement better solutions - this way I create websites and applications that meet modern standards and user expectations.",
+    },
+    projectsPage: {
+        title: "Take a look at what I've already created.",
+        description: "Here you'll find commercial solutions I've built, projects currently in progress, as well as applications developed for self-practice and skill improvement.",
+        purpose: {
+            training: "Education and training",
+            optimization: "Work optimization",
+            branding: "Education and personal branding",
+        },
+        madefor: "Made for",
+        personal: "My personal website",
+
+        parameter1: "Performance",
+        parameter2: "Accessibility",
+        parameter3: "SEO",
+
+        scrollmotion: "ScrollMotion is a JavaScript library designed for easy implementation of animations during page scrolling. It is showcased on a modern, minimalist one-page website.",
+        vrvreport: "VRV Report is a response to the need for optimizing and standardizing reporting after HVAC system inspections. The application speeds up report creation by generating PDF files from entered data and highlights abnormalities in device parameters. It is built as a Progressive Web App (PWA), allowing users to install the web app on their devices and use it offline.",
+        personalWebsite: "When designing the website, I aimed to faithfully reflect my style and the way I present content. A minimalist and clean design is complemented by carefully selected graphics and icons.",
     }
 }

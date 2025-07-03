@@ -9,7 +9,7 @@
             <div class="right section">
                 <div class="tile" data-aos="anim-up">
                     <div class="imgContainer">
-                        <NuxtImg alt="personal app" class="img" src="/img/undraw_landing.svg"></NuxtImg>
+                        <NuxtImg alt="personal app" class="img" src="/img/undraw/undraw_landing.svg"></NuxtImg>
                     </div>
                     <div class="box">
                         <h3>{{ $t('mainPage.projects3') }}</h3>
@@ -17,7 +17,7 @@
                 </div>
                 <div class="tile" data-aos="anim-up">
                     <div class="imgContainer">
-                        <NuxtImg alt="pie chart" class="img" src="/img/undraw_pie-chart.svg"></NuxtImg>
+                        <NuxtImg alt="pie chart" class="img" src="/img/undraw/undraw_pie-chart.svg"></NuxtImg>
                     </div>
                     <div class="box">
                         <h3>{{ $t('mainPage.projects4') }}</h3>
@@ -25,7 +25,7 @@
                 </div>
                 <div class="tile" data-aos="anim-up">
                     <div class="imgContainer">
-                        <NuxtImg alt="custom app" class="img" src="/img/undraw_real-time-sync.svg"></NuxtImg>
+                        <NuxtImg alt="custom app" class="img" src="/img/undraw/undraw_real-time-sync.svg"></NuxtImg>
                     </div>
                     <div class="box">
                         <h3>{{ $t('mainPage.projects5') }}</h3>

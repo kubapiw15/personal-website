@@ -15,6 +15,7 @@ html.light {
     --low-contrast-30: rgb(185, 185, 185, 0.3);
     --low-contrast-60: rgb(185, 185, 185, 0.6);
     --low-contrast-90: rgb(185, 185, 185, 0.9);
+    --green: rgb(34, 179, 34);
 }
 
 html.dark {
@@ -34,4 +35,5 @@ html.dark {
     --low-contrast-30: rgb(58, 58, 58, 0.3);
     --low-contrast-60: rgb(58, 58, 58, 0.6);
     --low-contrast-90: rgb(58, 58, 58, 0.9);
+    --green: rgb(34, 179, 34);
 }

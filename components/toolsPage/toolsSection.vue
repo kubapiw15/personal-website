@@ -110,7 +110,7 @@
                     icon=""
                     color="#203579"
                     :description="t('toolsPage.scrollmotion')"
-                    link="https://scrollmotion.vercel.app/"
+                    link="https://scrollmotion.kubapiw.dev/"
                     ></ToolsPageTile>
                     <ToolsPageTile
                     name="PDFMake"
@@ -135,17 +135,24 @@
                     ></ToolsPageTile>
                     <ToolsPageTile
                     name="Pinia"
-                    icon="bxl bx-tailwind-css"
+                    icon=""
                     color="#FFD859"
                     :description="t('toolsPage.pinia')"
                     link="https://pinia.vuejs.org/"
                     ></ToolsPageTile>
                     <ToolsPageTile
                     name="I18n"
-                    icon="bxl bx-tailwind-css"
+                    icon=""
                     color="#41B883"
                     :description="t('toolsPage.i18n')"
                     link="https://vue-i18n.intlify.dev/"
+                    ></ToolsPageTile>
+                    <ToolsPageTile
+                    name="Vite PWA"
+                    icon="bxl bx-vite-js"
+                    color="#646CFF"
+                    :description="t('toolsPage.vitepwa')"
+                    link="https://vite-pwa-org.netlify.app/"
                     ></ToolsPageTile>
                 </div>
             </div>

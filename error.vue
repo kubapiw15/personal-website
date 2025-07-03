@@ -26,6 +26,11 @@ const random = Math.floor(Math.random() * 13)+1
 
 const error = useError()
 
+
+    onMounted(()=>{
+        window.scrollTo(0, 0)
+    })
+
 useSeoMeta({
     title: error.value.statusCode
 })

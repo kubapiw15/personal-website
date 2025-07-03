@@ -8,6 +8,10 @@ export default {
         toolsPage: {
             title: "Narzędzia",
             description: 'Dowiedz się więcej o technologiach oraz rozwiązaniach, które stosuję w aplikacjach, aby zapewnić im wszystkie potrzebne funkcjonalności.',
+        },
+        projectsPage: {
+            title: "Projekty",
+            description: "Rzuć okiem na stworzone przeze mnie rozwiązania komercyjne, te w trakcie realizacji oraz aplikacje stworzone do rozwoju umiejętności."
         }
     },
     error: {
@@ -70,8 +74,7 @@ export default {
 
         title1: "Podstawy",
         title2: "Frameworki",
-        title3: "Biblioteki",
-        title4: "Inne narzędzia",
+        title3: "Biblioteki i narzędzia",
 
         html: "HTML to język znaczników służący do tworzenia struktury stron internetowych. Opisuje elementy jak nagłówki, tekst, obrazy i linki, interpretowane przez przeglądarkę internetową.",
         css: "CSS to język służący do stylizacji stron internetowych. Pozwala zmieniać kolory, czcionki, odstępy, układ, rozmiary, dodawać animacje i dopasować wygląd strony do różnych urządzeń.",
@@ -86,6 +89,7 @@ export default {
         expressjs: "Express.js to minimalistyczny i elastyczny framework dla Node.js, który ułatwia tworzenie serwerów i API. Pozwala szybko obsługiwać żądania, zarządzać integracją z bazami danych, co przyspiesza rozwój backendu aplikacji webowych.",
 
         boxicons: "Boxicons to nowoczesny zestaw ikon, które wykorzystuję do tworzenia czytelnych i estetycznych stron internetowych. Są lekkie, eleganckie i świetnie wyglądają zarówno na komputerze, jak i na telefonie.",
+        vitepwa: "Vite PWA to narzędzie, które zamienia Twoją stronę w aplikację działającą offline, szybciej się ładującą i możliwą do instalacji na telefonie oraz na komputerze tak, aby działała jak zwykła aplikacja.",
         googlefonts: "Google Fonts to darmowa biblioteka profesjonalnych czcionek, dzięki której Twoja strona wygląda nowocześnie, jest czytelna na każdym urządzeniu i idealnie dopasowana do charakteru Twojej marki.",
         aos: "AOS to lekka biblioteka JavaScript, która pozwala na łatwe dodanie efektów animacji do elementów strony w momencie, gdy użytkownik do nich przewija. Dzięki temu strona wygląda bardziej dynamicznie i nowocześnie, a odwiedzający są bardziej zaangażowani.",
         scrollmotion: "ScrollMotion to minimalistyczna, autorska biblioteka JavaScript stworzona jako alternatywa dla AOS, idealna do małych i średnich projektów, gdzie potrzebujesz prostych, ale elastycznych animacji na scroll.",
@@ -97,5 +101,24 @@ export default {
 
         epilogue1: "Co dalej?",
         epilogue2: "Każdy projekt to dla mnie okazja do nauki i wdrażania lepszych rozwiązań - dzięki temu tworzę strony i aplikacje, które odpowiadają współczesnym standardom i oczekiwaniom użytkowników.",
+    },
+    projectsPage: {
+        title: "Rzuć okiem na to, co już stworzyłem.",
+        description: "Znajdziesz tu stworzone przeze mnie rozwiązania komercyjne, te w trakcie realizacji oraz aplikacje stworzone do samodzielnego ćwiczenia i rozwoju umiejętności.",
+        purpose: {
+            training: "Nauka i trening",
+            optimization: "Optymalizacja pracy",
+            branding: "Nauka i promocja usług",
+        },
+        madefor: "Wykonano dla",
+        personal: "Moja osobista strona internetowa",
+
+        parameter1: "Wydajność",
+        parameter2: "Dostępność",
+        parameter3: "SEO",
+
+        scrollmotion: "ScrollMotion to biblioteka JavaScript służąca do łatwego implementowania animacji podczas przewijania strony. Całość została zaprezentowana na nowoczesnej i minimalistycznej stronie one-page.",
+        vrvreport: "VRV Report to odpowiedź na potrzebę optymalizacji oraz standaryzacji raportowania po przeglądach systemów klimatyzacji. Aplikacja przyśpiesza tworzenie raportów generując pliki PDF z wprowadzonych danych oraz wskazuje nieprawidłowości w parametrach urządzeń. Została ona wykonana w technologii PWA, co umożliwia pobieranie aplikacji webowej na urządzenia oraz działanie w trybie offline.",
+        personalWebsite: "Projektując stronę, zależało mi na wiernym odzwierciedleniu mojego stylu oraz formy prezentacji treści. Minimalistyczny i przejrzysty design uzupełniają starannie dobrane grafiki oraz ikony.",
     }
 }

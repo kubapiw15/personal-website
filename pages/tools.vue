@@ -30,9 +30,10 @@
               <div class="section left">
                 <h2 data-aos="fade">{{ $t('toolsPage.epilogue1') }}</h2>
                 <p data-aos="anim-up">{{ $t('toolsPage.epilogue2') }}</p>
+                <p class="description"></p>
               </div>
               <div class="section right">
-                <NuxtImg data-aos="fade" class="img" src="/img/undraw_dev-productivity.svg" alt="Developer"></NuxtImg>
+                <NuxtImg data-aos="fade" class="img" src="/img/undraw/undraw_dev-productivity.svg" alt="Developer"></NuxtImg>
               </div>
             </div>
           </div>

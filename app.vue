@@ -59,7 +59,7 @@
 
     @media screen and (min-width: 2500px){
         html {
-            font-size: 24px;
+            font-size: 28px;
         }
     }
 </style>
