@@ -4,10 +4,12 @@
             <div class="left section">
                 <h2 class="h2" data-aos="fade">{{ $t('mainPage.projects1') }}</h2>
                 <p data-aos="anim-left" class="desc">{{ $t('mainPage.projects2') }}</p>
-                <NuxtLink data-aos="anim-up" class="link">{{ $t('mainPage.projectsLink') }}</NuxtLink>
+                <div data-aos="anim-up">
+                    <NuxtLink :class="{link_highlighted: highlighted}" class="link" :to="$localePath('/projects')">{{ $t('mainPage.projectsLink') }}</NuxtLink>
+                </div>
             </div>
             <div class="right section">
-                <div class="tile" data-aos="anim-up">
+                <div class="tile" data-aos="anim-up" @click="showButton()">
                     <div class="imgContainer">
                         <NuxtImg alt="personal app" class="img" src="/img/undraw/undraw_landing.svg"></NuxtImg>
                     </div>
@@ -15,7 +17,7 @@
                         <h3>{{ $t('mainPage.projects3') }}</h3>
                     </div>
                 </div>
-                <div class="tile" data-aos="anim-up">
+                <div class="tile" data-aos="anim-up" @click="showButton()">
                     <div class="imgContainer">
                         <NuxtImg alt="pie chart" class="img" src="/img/undraw/undraw_pie-chart.svg"></NuxtImg>
                     </div>
@@ -23,7 +25,7 @@
                         <h3>{{ $t('mainPage.projects4') }}</h3>
                     </div>
                 </div>
-                <div class="tile" data-aos="anim-up">
+                <div class="tile" data-aos="anim-up" @click="showButton()">
                     <div class="imgContainer">
                         <NuxtImg alt="custom app" class="img" src="/img/undraw/undraw_real-time-sync.svg"></NuxtImg>
                     </div>
@@ -38,6 +40,15 @@
 </template>
 
 <script setup>
+
+const highlighted = ref(false)
+
+const showButton = () => {
+    highlighted.value = false
+    setTimeout(() => {
+        highlighted.value = true
+    }, 0);
+}
 
 </script>
 
@@ -92,13 +103,35 @@
         padding: 1rem 2.5rem;
         border-radius: 20rem;
         color: var(--text-main);
-        transition: color 0.2s, background-color 0.2s, opacity 0.5s, transform 0.5s;
+        transition: color 0.2s, background-color 0.2s, opacity 0.5s, transform 0.5s, border 0.5s;
         cursor: pointer;
         text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: max-content;
+        z-index: 1;
+        border: solid 0.1rem transparent;
     }
 
     .link:hover {
         background-color: var(--low-contrast-60);
+    }
+
+    .link_highlighted {
+            animation: link forwards 2s;
+    }
+
+    @keyframes link {
+        0% {
+            border: solid 0.1rem transparent;
+        }
+        20%, 50% {
+            border: solid 0.1rem var(--additive);
+        }
+        100% {
+            border: solid 0.1rem transparent;
+        }
     }
 
     .tile {

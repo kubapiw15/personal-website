@@ -16,6 +16,7 @@
                 <div class="column">
                     <p class="title">{{ $t('footer.title3') }}</p>
                     <div class="links">
+                        <a class="link" href="https://www.linkedin.com/in/jpiwonski" target="_blank">LinkedIn</a>
                         <a class="link" href="https://github.com/kubapiw15" target="_blank">GitHub</a>
                         <a class="link" href="https://www.npmjs.com/~kubapiw15" target="_blank">NPM</a>
                     </div>

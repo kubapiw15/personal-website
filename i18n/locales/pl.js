@@ -55,7 +55,7 @@ export default {
 
         projects1: "Co tworzę?",
         projects2: "Najważniejsza jest dla mnie bliska współpraca z klientem na każdym etapie projektu. Dzięki temu mogę dokładnie zrozumieć jego potrzeby, oczekiwania oraz specyfikę branży, w której działa. Nie korzystam z gotowych rozwiązań ani szablonów - każdy projekt tworzę indywidualnie, dostosowując go precyzyjnie do wymagań klienta. Tylko takie podejście pozwala stworzyć funkcjonalne, estetyczne i efektywne rozwiązania, które naprawdę działają i przynoszą wymierne korzyści.",
-        projectsLink: "Zobacz gotowe rozwiązania",
+        projectsLink: "Zobacz ukończone rozwiązania",
         projects3: "Strony internetowe dla firm i osób prywatnych",
         projects4: "Aplikacje webowe wspierające i automatyzujące pracę",
         projects5: "Dedykowane systemy dopasowane do Twoich potrzeb",
@@ -65,7 +65,16 @@ export default {
         tools3: "Dowiedz się więcej o technologiach oraz rozwiązaniach, które stosuję w aplikacjach, aby zapewnić im wszystkie potrzebne funkcjonalności.",
         tools4: "Przeglądaj",
 
-        contact1: "Tu mnie znajdziesz."
+        contact: "kontakt",
+        contact1: "Tu mnie znajdziesz.",
+        contact2: "Poczta elektroniczna",
+        contact3: "Profil LinkedIn",
+        contact4: "Profil GitHub",
+
+        contact5: "Skontaktujmy się.",
+        contact6: "Dane kontaktowe",
+        contact7: "Piszę w sprawie...",
+        contact8: "Wiadomość",
     },
     toolsPage: {
         return: "Strona główna",

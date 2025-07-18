@@ -60,7 +60,7 @@ import { ProjectsPageTile } from '#components';
 
 .content {
     width: 70%;
-    padding-top: 5rem;
+    padding-block: 5rem 3rem;
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -75,6 +75,7 @@ import { ProjectsPageTile } from '#components';
 @media screen and (max-width: 1000px) {
     .content {
         width: 95%;
+        max-width: 600px;
     }
 }
 

@@ -2,23 +2,39 @@
     <div class="component">
         <div class="content">
             <div class="left section">
-                <h2>{{ $t('mainPage.contact1') }}</h2>
-                <a to="mailto:kubapiw15@gmail.com" target="blank" class="box">
-                    <div class="top">
-                        <i class='bx  bx-envelope'></i> 
-                        <div class="description">
-                            <p class="platform"></p>
-                            <p class="name"></p>
-                        </div>
-                    </div>
-                    <div class="bottom">
-                        <p></p>
-                    </div>
-                    <div class="shadow"></div>
-                </a>
+                <h2 data-aos="fade">{{ $t('mainPage.contact1') }}</h2>
+
+                <ContactTile
+                data-aos="anim-up"
+                :name="`${$t('mainPage.contact')}@kubapiw.dev`"
+                :platform="`${$t('mainPage.contact2')}`"
+                :blank="false"
+                :link="`mailto:${$t('mainPage.contact')}@kubapiw.dev`"
+                >
+                <i class='bx  bx-envelope'></i> 
+                </ContactTile>
+                <ContactTile
+                data-aos="anim-up"
+                :name="`Jakub Piwoński`"
+                :platform="`${$t('mainPage.contact3')}`"
+                :blank="true"
+                :link="`https://www.linkedin.com/in/jpiwonski`"
+                >
+                <i class='bxl  bx-linkedin'></i> 
+                </ContactTile>
+                <ContactTile
+                data-aos="anim-up"
+                :name="`kubapiw15 (Jakub Piwoński)`"
+                :platform="`${$t('mainPage.contact4')}`"
+                :blank="true"
+                :link="`https://github.com/kubapiw15`"
+                >
+                <i class='bxl  bx-github'></i> 
+                </ContactTile>
             </div>
             <div class="right section">
-                <h2>Napisz do mnie</h2>
+                <h2 data-aos="fade">{{ $t('mainPage.contact5') }}</h2>
+                <ContactForm></ContactForm>
             </div>
         </div>
     </div>
@@ -34,42 +50,81 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 10rem;
+        margin-block: 6rem;
     }
 
     .content {
         width: 70%;
         display: flex;
-        align-items: flex-start;
+        align-items: stretch;
         justify-content: space-between;
-        position: relative;
+        height: 100%;
     }
 
     .section {
         width: 45%;
-        height: 20rem;
         display: flex;
         justify-content: flex-start;
         align-items: center;
         flex-direction: column;
         box-sizing: border-box;
+        flex: 1;
     }
 
     h2 {
         text-align: left;
         font-size: 2rem;
-        transition: color 0.2s;
+        transition: color 0.2s, transform 0.5s, opacity 0.5s;
         color: var(--text-main);
         line-height: 5rem;
     }
 
-    .box {
-        width: calc(80%);
-        border: solid 0.1rem var(--lower-contrast);
-        position: relative;
-        overflow: hidden;
-        border-radius: 0.5rem;
-        box-sizing: border-box;
-        padding: 1rem;
+    .contactTile {
+
+
+        .top {
+            i {
+                font-size: 2.5rem;
+                margin-right: 1rem;
+                color: var(--additive);
+                transition: color 0.2s;
+            }
+        }
     }
+
+    
+    @media screen and (max-width: 1400px){
+        .content {
+            width: 90%;
+        }
+
+        .section {
+            width: 50%;
+        }
+
+    }
+
+    @media screen and (max-width: 1000px){
+
+        h2 {
+            width: 100%;
+        }
+
+        .content {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .section {
+            height: auto;
+            width: 100%;
+
+        }
+
+        .section:nth-child(1){
+            margin-bottom: 5rem;
+        }
+    }
+    
 </style>

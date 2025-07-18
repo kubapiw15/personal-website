@@ -85,7 +85,7 @@ const {name, purpose, purposeIcon, color, link, linkDesc, preview, description, 
         background-color: var(--bg);
         padding-inline: 1rem;
         border: solid 0.1rem var(--low-contrast);
-        transition: background-color 0.2s, border 0.2s, opacity 0.5s, transform 0.5s;
+        transition: background-color 0.2s, border 0.2s, opacity 0.5s, transform 0.5s !important;
         z-index: 3;
         
 
@@ -113,7 +113,7 @@ const {name, purpose, purposeIcon, color, link, linkDesc, preview, description, 
         border-radius: 0.5rem;
         padding: 1rem;
         border: solid 0.1rem var(--low-contrast);
-        transition: background-color 0.2s, border 0.2s, opacity 0.5s, transform 0.5s;
+        transition: background-color 0.2s, border 0.2s, opacity 0.5s, transform 0.5s !important;
         position: relative;
         flex: 1;
 
@@ -172,7 +172,7 @@ const {name, purpose, purposeIcon, color, link, linkDesc, preview, description, 
         border-radius: 0.5rem;
         padding: 1.5rem 1rem 1rem 1rem;
         border: solid 0.1rem var(--low-contrast);
-        transition: background-color 0.2s, border 0.2s, opacity 0.5s, transform 0.5s;
+        transition: background-color 0.2s, border 0.2s, opacity 0.5s, transform 0.5s !important;
         display: flex;
         justify-content: stretch;
         position: relative;

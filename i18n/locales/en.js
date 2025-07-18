@@ -61,6 +61,18 @@ export default {
         tools2: "your project.",
         tools3: "Learn more about the technologies and solutions I use in applications to provide them with all the necessary functionalities.",
         tools4: "Browse",
+
+        contact: "contact",
+
+        contact1: "Find me here.",
+        contact2: "Email",
+        contact3: "LinkedIn Profile",
+        contact4: "GitHub Profile",
+
+        contact5: "Let's get in touch.",
+        contact6: "Contact information",
+        contact7: "I'm writing about...",
+        contact8: "Message",
     },
     toolsPage: {
         return: "Main page",
