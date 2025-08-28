@@ -34,9 +34,10 @@
             link="https://kubapiw.dev/"
             :linkDesc="$t('projectsPage.personal')"
             :description="$t('projectsPage.personalWebsite')"
-            :lighthouse="[0, 0, 0]"
+            :lighthouse="[99, 100, 100]"
             :technologies="['nuxtjs', 'googlefonts', 'boxicons', 'aosjs', 'i18n']"
             ></ProjectsPageTile>
+            <!-- TODO zaktualizować lighthouse -->
         </div>
     </div>
 </template>

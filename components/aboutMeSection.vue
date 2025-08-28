@@ -12,8 +12,8 @@
                     {{ $t('mainPage.about3') }} <span class="additive">{{ $t('mainPage.about4') }}</span> {{ $t('mainPage.about5') }}
                 </h2>
                 <div class="buttons">
-                    <nuxt-link data-aos="anim-up" class="link" to="">{{ $t('mainPage.about6') }}</nuxt-link>
-                    <nuxt-link data-aos="anim-up" class="link" to="">{{ $t('mainPage.about7') }}</nuxt-link>
+                    <nuxt-link data-aos="anim-up" class="link" :to="$localePath(`/contact`)">{{ $t('mainPage.about6') }}</nuxt-link>
+                    <nuxt-link data-aos="anim-up" class="link" :to="$localePath(`/aboutme`)">{{ $t('mainPage.about7') }}</nuxt-link>
                 </div>
             </div>
         </div>
@@ -50,7 +50,7 @@
         margin: 3rem 8rem 3rem 0rem;
         position: relative;
         z-index: 1;
-        transition: opacity 0.5s, background-color 0.2s;
+        transition: opacity 0.5s, background-color 0.2s, border 0.2s;
         backdrop-filter: blur(5rem);
         
         border: solid 0.10rem var(--low-contrast-30);
@@ -80,6 +80,7 @@
         font-size: 2.2em;
         margin: 0;
         line-height: 5rem;
+        font-weight: 600;
     }
 
     .additive {
@@ -101,6 +102,7 @@
         transition: opacity 0.5s, transform 0.5s, border 0.2s, background-color 0.2s, color 0.2s;
         margin-block: 0.5rem;
         white-space: nowrap;
+        text-decoration: none;
     }
 
     .link:nth-child(1){

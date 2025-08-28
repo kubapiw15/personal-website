@@ -12,7 +12,8 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      domain: "kubapiw.dev"
+      domain: "kubapiw.dev",
+      api: "https://192.168.0.241:3001/api"
     }
   },
 
@@ -27,7 +28,7 @@ export default defineNuxtConfig({
   },
   googleFonts: {
     families: {
-      Poppins: [300, 400, 500, 600],
+      Poppins: [300, 400, 500, 600, 700, 800],
     },
     display: 'swap',
     // poniżej opcjonalne, ale zalecane

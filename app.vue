@@ -3,7 +3,6 @@
 </template>
 
 <script setup>
-
     
     const { t, locale } = useI18n()
 
@@ -40,9 +39,16 @@
         transition: background-color 0.2s;
         padding: 0;
         margin: 0;
-        user-select: none;
         width: 100vw;
         overflow-x: hidden;
+    }
+
+    i {
+        user-select: none;
+    }
+
+    p, h1, h2, h3, h4, h5 {
+        cursor: default;
     }
 
     @media screen and (max-width: 1400px){

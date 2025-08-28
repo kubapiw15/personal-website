@@ -206,6 +206,7 @@ const { t } = useI18n()
         font-size: 1.7rem;
         margin-block: 4rem;
         transition: opacity 0.5s, color 0.2s;
+        font-weight: 600;
     }
 
     .tileContainer {

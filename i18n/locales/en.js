@@ -8,7 +8,25 @@ export default {
         toolsPage: {
             title: "Tools",
             description: 'Learn more about the technologies and solutions I use in applications to provide them with all the necessary functionalities.',
+        },
+        projectsPage: {
+            title: "Projects",
+            description: "Take a look at the commercial solutions I have created, those in progress, and the applications developed to improve my skills."
+        },
+        contactPage: {
+            title: "Contact",
+            description: "Describe your problem or idea - I'll help you find the right solution. Just send a message to get started."
+        },
+        aboutmePage: {
+            title: "About Me",
+            description: ""
         }
+    },
+    general: {
+        nodata: "No data",
+        pp1: "I agree to the processing of my personal data in accordance with the ",
+        pp2: "Privacy Policy",
+        pp3: "."
     },
     error: {
         404: {
@@ -70,9 +88,16 @@ export default {
         contact4: "GitHub Profile",
 
         contact5: "Let's get in touch.",
-        contact6: "Contact information",
+        contact6: "Your e-mail",
         contact7: "I'm writing about...",
         contact8: "Message",
+        contact9: "Submit",
+
+        contact10: "Message delivered!",
+        contact11: "You will receive a reply at your email soon.",
+
+        contact12: "Something went wrong...",
+        contact13: "Please try again"
     },
     toolsPage: {
         return: "Main page",
@@ -128,5 +153,39 @@ export default {
         scrollmotion: "ScrollMotion is a JavaScript library designed for easy implementation of animations during page scrolling. It is showcased on a modern, minimalist one-page website.",
         vrvreport: "VRV Report is a response to the need for optimizing and standardizing reporting after HVAC system inspections. The application speeds up report creation by generating PDF files from entered data and highlights abnormalities in device parameters. It is built as a Progressive Web App (PWA), allowing users to install the web app on their devices and use it offline.",
         personalWebsite: "When designing the website, I aimed to faithfully reflect my style and the way I present content. A minimalist and clean design is complemented by carefully selected graphics and icons.",
+    },
+    contactPage: {
+        title: "Ready? Let's start our partnership.",
+        description: "Describe your problem or idea - I'll help you find the right solution. Just send a message to get started."
+    },
+    aboutmePage: {
+        title: "A Few Words About My Career Path.",
+        description: "Here you'll find information about my career journey and my favorite sources of knowledge.",
+        types: {
+            documentation: "Documentation",
+            resources: "Resources"
+        },
+        educationTitle: "My Learning Path",
+        education: {
+            course: {
+                title: "Web-Coders.pl",
+                description: "Course in web application development - frontend and basic backend."
+            },
+            school: {
+                title: "TEB Technical School",
+                description: "TEB Technical School in Kraków, specializing in IT."
+            },
+            inf02: {
+                title: "Qualification INF.02",
+                description: "Administration of operating systems and computer network configuration."
+            },
+            inf03: {
+                title: "Qualification INF.03",
+                description: "Development and administration of web applications and databases."
+            }
+        },
+        start: "For almost a year, I have been developing commercial web applications that optimize work, while simultaneously creating solutions for my future clients.",
+        projects: "My projects",
+        resources: "My favorite sources of knowledge"
     }
 }

@@ -6,7 +6,7 @@
                 <nuxt-link class="link" :to="$localePath('/projects')">{{ $t('mainPage.navbar2') }}</nuxt-link>
                 <nuxt-link class="link" :to="$localePath('/contact')">{{ $t('mainPage.navbar3') }}</nuxt-link>
                 <nuxt-link class="link" :to="$localePath('/tools')">{{ $t('mainPage.navbar4') }}</nuxt-link>
-                <nuxt-link class="link" :to="$localePath('/sandbox')">{{ $t('mainPage.navbar5') }}</nuxt-link>
+                <!-- <nuxt-link class="link" :to="$localePath('/sandbox')">{{ $t('mainPage.navbar5') }}</nuxt-link> -->
             </nav>
             <div class="colormode" @click="switchColorMode()">
                 <i class='bx bx-sun'></i>

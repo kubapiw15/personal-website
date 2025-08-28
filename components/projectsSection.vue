@@ -88,6 +88,7 @@ const showButton = () => {
         color: var(--text-main);
         transition: color 0.2s, opacity 0.5s;
         margin-bottom: 3rem;
+        font-weight: 600;
     }
 
     .desc {
@@ -152,6 +153,10 @@ const showButton = () => {
         background-color: var(--low-contrast-60);
     }
 
+    .tile:hover .imgContainer {
+        transform: scale(1.05);
+    }
+
 
     h3 {
         color: var(--text-dark);
@@ -159,6 +164,7 @@ const showButton = () => {
         font-size: 1.3rem;
         font-weight: 500;
         transition: color 0.2s;
+        font-weight: 500;
     }
 
     .tile p {
@@ -179,6 +185,7 @@ const showButton = () => {
         overflow: hidden;
         height: 10rem;
         width: 7rem;
+        transition: transform 0.2s;
     }
 
     .img {

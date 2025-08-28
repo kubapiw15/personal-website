@@ -12,7 +12,22 @@ export default {
         projectsPage: {
             title: "Projekty",
             description: "Rzuć okiem na stworzone przeze mnie rozwiązania komercyjne, te w trakcie realizacji oraz aplikacje stworzone do rozwoju umiejętności."
+        },
+        contactPage: {
+            title: "Kontakt",
+            description: "Masz pomysł lub wyzwanie? Napisz do mnie i razem znajdziemy konkretne i skuteczne rozwiązanie."
+        },
+        aboutmePage: {
+            title: "O mnie",
+            description: ""
         }
+
+    },
+    general: {
+        nodata: "Brak danych",
+        pp1: "Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z ",
+        pp2: "polityką prywatności",
+        pp3: "."
     },
     error: {
         404: {
@@ -72,9 +87,16 @@ export default {
         contact4: "Profil GitHub",
 
         contact5: "Skontaktujmy się.",
-        contact6: "Dane kontaktowe",
+        contact6: "Twój adres e-mail.",
         contact7: "Piszę w sprawie...",
         contact8: "Wiadomość",
+        contact9: "Wyślij",
+
+        contact10: "Wiadomość dotarła!",
+        contact11: "Wkrótce otrzymasz odpowiedź na Twój adres e-mail.",
+
+        contact12: "Coś poszło nie tak...",
+        contact13: "Spróbuj ponownie",
     },
     toolsPage: {
         return: "Strona główna",
@@ -129,5 +151,39 @@ export default {
         scrollmotion: "ScrollMotion to biblioteka JavaScript służąca do łatwego implementowania animacji podczas przewijania strony. Całość została zaprezentowana na nowoczesnej i minimalistycznej stronie one-page.",
         vrvreport: "VRV Report to odpowiedź na potrzebę optymalizacji oraz standaryzacji raportowania po przeglądach systemów klimatyzacji. Aplikacja przyśpiesza tworzenie raportów generując pliki PDF z wprowadzonych danych oraz wskazuje nieprawidłowości w parametrach urządzeń. Została ona wykonana w technologii PWA, co umożliwia pobieranie aplikacji webowej na urządzenia oraz działanie w trybie offline.",
         personalWebsite: "Projektując stronę, zależało mi na wiernym odzwierciedleniu mojego stylu oraz formy prezentacji treści. Minimalistyczny i przejrzysty design uzupełniają starannie dobrane grafiki oraz ikony.",
+    },
+    contactPage: {
+        title: "Masz pomysł? Ja mam rozwiązanie.",
+        description: "Opisz swój pomysł lub problem - pomogę znaleźć najlepsze rozwiązanie. Wystarczy, że wyślesz wiadomość."
+    },
+    aboutmePage: {
+        title: "Parę słów o mojej ścieżce zawodowej.",
+        description: "Znajdziesz tu informacje o mojej drodze zawodowej oraz o ulubionych źródłach wiedzy, z których korzystam.",
+        types: {
+            documentation: "Dokumentacja",
+            resources: "Materiały"
+        },
+        educationTitle: "Moja ścieżka nauki",
+        education: {
+            course: {
+                title: "Web-Coders.pl",
+                description: "Kurs tworzenia aplikacji webowych - frontend oraz podstawy backendu."
+            },
+            school: {
+                title: "Technikum TEB",
+                description: "Technikum TEB w Krakowie na kierunku informatycznym."
+            },
+            inf02: {
+                title: "Kwalifikacja INF.02",
+                description: "Administracja systemami operacyjnymi i konfiguracja sieci komputerowych."
+            },
+            inf03: {
+                title: "Kwalifikacja INF.03",
+                description: "Tworzenie i administrowanie aplikacjami webowymi oraz bazami danych."
+            }
+        },
+        start: "Od prawie roku zajmuję się tworzeniem komercyjnych aplikacji webowych optymalizujących pracę równolegle z tworzeniem rozwiązań dla moich przyszłych klientów.",
+        projects: "Moje projekty",
+        resources: "Moje ulubione źródła wiedzy"
     }
 }

@@ -1,41 +1,42 @@
 <template>
     <div class="page">
-          <div class="cmcontainer">
+        <div class="cmcontainer">
             <ColorMode></ColorMode>
           </div>
           <NuxtLink class="back" :to="$localePath('/')">
             <i class='bx  bx-chevron-left'  ></i> 
             <p>{{ $t("toolsPage.return") }}</p>
-          </NuxtLink> 
-        <div class="header">
+          </NuxtLink>  
+          <div class="header">
             <div class="content">
                 <div class="section left">
-                    <h1>{{ $t('projectsPage.title') }}</h1>
-                    <p>{{ $t("projectsPage.description") }}</p>
+                    <h1>{{ $t('contactPage.title') }}</h1>
+                    <p>{{ $t("contactPage.description") }}</p>
                 </div>
                 <div class="section right">
-                  <NuxtImg class="img" alt="decoration image" src="/img/undraw/undraw_smartphone.svg"></NuxtImg>
-                  <NuxtImg class="img" alt="decoration image" src="/img/undraw/undraw_user-account.svg"></NuxtImg>
-                  <NuxtImg class="img" alt="decoration image" src="/img/undraw/undraw_data-analysis.svg"></NuxtImg>
+                  <NuxtImg class="img" alt="decoration image" src="/img/undraw/undraw_talking-on-the-phone.svg"></NuxtImg>
                 </div>
             </div>
         </div>
-        <ProjectsPageProjectsSection></ProjectsPageProjectsSection>
+        <ContactSection></ContactSection>
     </div>
 </template>
 
 <script setup>
 
+
 const { t } = useI18n()
 
 const { domain } = useRuntimeConfig().public
 
+
 useSeoMeta({
-  title: `${domain} - ${t('seo.projectsPage.title')}`,
-  description: t('seo.projectsPage.description'),
-  ogTitle: `${domain} - ${t('seo.projectsPage.title')}`,
-  ogDescription: t('seo.projectsPage.description')
+  title: `${domain} - ${t('seo.contactPage.title')}`,
+  description: t('seo.contactPage.description'),
+  ogTitle: `${domain} - ${t('seo.contactPage.title')}`,
+  ogDescription: t('seo.contactPage.description')
 })
+
 
     import AOS from 'aos'
 
@@ -49,6 +50,7 @@ useSeoMeta({
 </script>
 
 <style lang="scss" scoped>
+
 
 .page {
     display: flex;
@@ -108,9 +110,10 @@ useSeoMeta({
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-block: 2rem;
+  padding-block: 2rem 5rem;
   position: relative;
   overflow: hidden;
+  border-bottom: solid 0.1rem var(--low-contrast-30);
 }
 
 .content {
@@ -152,45 +155,7 @@ h1 {
 
 .img {
   position: absolute;
-  transform: translateY(0.5rem);
-  animation: updown infinite ease-in-out;
-}
-
-.img:nth-child(1){
-  width: 6rem;
-  bottom: 0;
-  right: 20%;
-  animation-delay: 0s;
-  animation-duration: 8s;
-  z-index: 3;
-}
-
-.img:nth-child(2){
-  width: 12rem;
-  left: 0;
-  animation-delay: 1s;
-  animation-duration: 8s;
-  z-index: 2;
-}
-
-.img:nth-child(3){
-  width: 15rem;
-  right: 0;
-  top: 1rem;
-  animation-delay: 2s;
-  animation-duration: 8s;
-}
-
-@keyframes updown {
-  0% {
-    transform: translateY(0.5rem);
-  }
-  50% {
-    transform: translateY(-0.5rem);
-  }
-  100% {
-    transform: translateY(0.5rem);
-  }
+  height: 80%;
 }
 
 @media screen and (max-width: 1400px){
@@ -227,11 +192,7 @@ h1 {
     width: 20%;
   }
 
-  .img:nth-child(2), .img:nth-child(3) {
-    display: none;
-  }
-
-  .img:nth-child(1) {
+  .img {
     right: 0;
     bottom: auto;
     transform: translateX(50%);

@@ -39,6 +39,7 @@ h3 {
     transition: color 0.2s;
     color: var(--text-dark);
     opacity: 0.6;
+    font-weight: 500;
 }
 
 

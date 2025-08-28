@@ -62,7 +62,7 @@
     }
 
     .section {
-        width: 45%;
+        width: 50%;
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -77,6 +77,8 @@
         transition: color 0.2s, transform 0.5s, opacity 0.5s;
         color: var(--text-main);
         line-height: 5rem;
+        transition: color 0.2s, opacity 0.5s !important;
+        font-weight: 600;
     }
 
     .contactTile {
@@ -106,9 +108,9 @@
 
     @media screen and (max-width: 1000px){
 
-        h2 {
+        /* h2 {
             width: 100%;
-        }
+        } */
 
         .content {
             flex-direction: column;

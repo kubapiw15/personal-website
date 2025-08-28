@@ -150,6 +150,7 @@ h1 {
   font-size: 2.5rem;
   color: var(--text-main);
   transition: color 0.2s;
+  font-weight: 600;
 }
 
 .left p {
@@ -232,6 +233,7 @@ h1 {
     font-size: 2rem;
     color: var(--text-main);
     transition: color 0.2s, opacity 0.5s;
+    font-weight: 600;
   }
 
   p {

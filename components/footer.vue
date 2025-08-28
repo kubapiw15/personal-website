@@ -6,11 +6,11 @@
                     <p class="title">{{ $t('footer.title1') }}</p>
                     <div class="links">
                         <NuxtLink class="link" :to="$localePath('/')">{{ $t('mainPage.navbar0') }}</NuxtLink>
-                        <NuxtLink class="link" :to="''">{{ $t('mainPage.navbar1') }}</NuxtLink>
+                        <NuxtLink class="link" :to="$localePath('/aboutme')">{{ $t('mainPage.navbar1') }}</NuxtLink>
                         <NuxtLink class="link" :to="$localePath('/projects')">{{ $t('mainPage.navbar2') }}</NuxtLink>
-                        <NuxtLink class="link" :to="''">{{ $t('mainPage.navbar3') }}</NuxtLink>
+                        <NuxtLink class="link" :to="$localePath('/contact')">{{ $t('mainPage.navbar3') }}</NuxtLink>
                         <NuxtLink class="link" :to="$localePath('/tools')">{{ $t('mainPage.navbar4') }}</NuxtLink>
-                        <NuxtLink class="link" :to="''">{{ $t('mainPage.navbar5') }}</NuxtLink>
+                        <!-- <NuxtLink class="link" :to="''">{{ $t('mainPage.navbar5') }}</NuxtLink> -->
                     </div>
                 </div>
                 <div class="column">
@@ -24,7 +24,7 @@
                 <div class="column">
                     <p class="title">{{ $t('footer.title2') }}</p>
                     <div class="links">
-                        <NuxtLink class="link" :to="''">{{ $t('footer.legal2') }}</NuxtLink>
+                        <NuxtLink class="link" target="_blank" :to="$localePath('/privacy-policy')">{{ $t('footer.legal2') }}</NuxtLink>
                     </div>
                 </div>
             </div>
@@ -67,7 +67,7 @@ const { domain } = useRuntimeConfig().public
         justify-content: space-between;
         align-items: stretch;
         box-sizing: border-box;
-        padding-block: 2rem;
+        padding-block: 3rem;
     }
 
     .section {

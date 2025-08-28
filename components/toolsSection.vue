@@ -138,6 +138,7 @@
         font-size: 2.2rem;
         line-height: 5rem;
         margin-bottom: 3rem;
+        font-weight: 600;
     }
 
     p {
