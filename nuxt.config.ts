@@ -13,7 +13,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       domain: "kubapiw.dev",
-      api: "https://192.168.0.241:3001/api"
+      api: "https://api.kubapiw.dev/api"
     }
   },
 

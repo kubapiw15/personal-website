@@ -185,5 +185,51 @@ export default {
         start: "Od prawie roku zajmuję się tworzeniem komercyjnych aplikacji webowych optymalizujących pracę równolegle z tworzeniem rozwiązań dla moich przyszłych klientów.",
         projects: "Moje projekty",
         resources: "Moje ulubione źródła wiedzy"
+    },
+    privacyPolicy: {
+        'title': "Polityka Prywatności",
+
+        update: "Ostatnio zaktualizowano:",
+
+        'li1': "Informacje ogólne",
+        'p1': "Niniejsza Polityka Prywatności określa zasady przetwarzania i ochrony danych osobowych przekazywanych przez Użytkowników za pośrednictwem formularza kontaktowego dostępnego na stronie kubapiw.dev.",
+
+        'li2': "Administrator danych",
+        'p2-1': "Administratorem danych osobowych jest Jakub Piwoński, właściciel strony kubapiw.dev.",
+        'p2-2': `Kontakt w sprawie ochrony danych osobowych: kontakt{'@'}kubapiw.dev.`,
+
+        'li3': "Zakres przetwarzanych danych",
+        'p3-1': "Za pośrednictwem formularza kontaktowego gromadzone są następujące dane osobowe:",
+        'p3-2': "adres e-mail,",
+        'p3-3': "temat wiadomości,",
+        'p3-4': "treść wiadomości.",
+        'p3-5': "Podanie danych jest dobrowolne, lecz niezbędne do skorzystania z formularza kontaktowego.",
+
+        'li4': "Cel i podstawa prawna przetwarzania",
+        'p4-1': "Dane osobowe podane w formularzu kontaktowym przetwarzane są wyłącznie w celu:",
+        'p4-2': "udzielenia odpowiedzi na zapytanie Użytkownika,",
+        'p4-3': "prowadzenia dalszej korespondencji związanej ze sprawą.",
+        'p4-4': "Podstawą prawną przetwarzania danych jest art. 6 ust. 1 lit. f RODO - uzasadniony interes administratora polegający na prowadzeniu korespondencji.",
+
+        'li5': "Okres przechowywania danych",
+        'p5': "Dane osobowe będą przechowywane przez okres niezbędny do realizacji celu, w którym zostały zebrane, tj. do zakończenia korespondencji, a następnie usunięte, chyba że dalsze ich przechowywanie wynika z obowiązujących przepisów prawa.",
+
+        'li6': "Odbiorcy danych",
+        'p6': "Dane osobowe nie są przekazywane żadnym podmiotom trzecim, za wyjątkiem sytuacji wynikających z obowiązujących przepisów prawa.",
+
+        'li7': "Prawa Użytkownika",
+        'p7-1': "Użytkownikowi przysługuje prawo do:",
+        'p7-2': "dostępu do swoich danych osobowych,",
+        'p7-3': "sprostowania danych,",
+        'p7-4': "żądania usunięcia danych,",
+        'p7-5': "ograniczenia przetwarzania danych,",
+        'p7-6': "sprzeciwu wobec przetwarzania danych,",
+        'p7-7': "wniesienia skargi do Prezesa Urzędu Ochrony Danych Osobowych, jeśli uzna, że jego dane są przetwarzane niezgodnie z przepisami.",
+
+        'li8': "Zabezpieczenia",
+        'p8': "Administrator stosuje odpowiednie środki techniczne i organizacyjne w celu ochrony danych osobowych przed nieuprawnionym dostępem, utratą, zniszczeniem lub ujawnieniem.",
+
+        'li9': "Zmiany w Polityce Prywatności",
+        'p9': "Administrator zastrzega sobie prawo do wprowadzania zmian w niniejszej Polityce Prywatności. Aktualna wersja będzie publikowana na stronie internetowej."
     }
 }

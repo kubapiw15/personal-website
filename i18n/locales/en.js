@@ -97,7 +97,7 @@ export default {
         contact11: "You will receive a reply at your email soon.",
 
         contact12: "Something went wrong...",
-        contact13: "Please try again"
+        contact13: "Try again"
     },
     toolsPage: {
         return: "Main page",
@@ -187,5 +187,51 @@ export default {
         start: "For almost a year, I have been developing commercial web applications that optimize work, while simultaneously creating solutions for my future clients.",
         projects: "My projects",
         resources: "My favorite sources of knowledge"
+    },
+    privacyPolicy: {
+        'title': "Privacy Policy",
+
+        update: "Last updated:",
+
+        'li1': "General Information",
+        'p1': "This Privacy Policy sets out the rules for the processing and protection of personal data provided by Users via the contact form available on the website kubapiw.dev.",
+
+        'li2': "Data Controller",
+        'p2-1': "The data controller is Jakub Piwoński, the owner of the website kubapiw.dev.",
+        'p2-2': `For matters related to personal data, please contact: contact{'@'}kubapiw.dev.`,
+
+        'li3': "Scope of Data Processing",
+        'p3-1': "Through the contact form, the following personal data is collected:",
+        'p3-2': "e-mail address,",
+        'p3-3': "subject of the message,",
+        'p3-4': "message content.",
+        'p3-5': "Providing personal data is voluntary, but necessary to use the contact form.",
+
+        'li4': "Purpose and Legal Basis of Processing",
+        'p4-1': "The personal data provided in the contact form will be processed solely for the following purposes:",
+        'p4-2': "responding to the User's inquiry,",
+        'p4-3': "continuing any further correspondence related to the matter.",
+        'p4-4': "The legal basis for processing personal data is Article 6(1)(f) of the GDPR - the legitimate interest of the data controller in handling correspondence.",
+
+        'li5': "Data Retention Period",
+        'p5': "Personal data will be stored for the period necessary to achieve the purpose for which it was collected, i.e., until the correspondence is completed, and will then be deleted, unless further storage is required by applicable law.",
+
+        'li6': "Data Recipients",
+        'p6': "Personal data will not be shared with third parties, except where required by applicable law.",
+
+        'li7': "User Rights",
+        'p7-1': "The User has the right to:",
+        'p7-2': "access their personal data,",
+        'p7-3': "rectify their data,",
+        'p7-4': "request the deletion of their data,",
+        'p7-5': "restrict the processing of their data,",
+        'p7-6': "object to data processing,",
+        'p7-7': "lodge a complaint with the President of the Personal Data Protection Office (UODO) if they believe their data is being processed unlawfully.",
+
+        'li8': "Data Security",
+        'p8': "The Controller applies appropriate technical and organizational measures to protect personal data against unauthorized access, loss, destruction, or disclosure.",
+
+        'li9': "Changes to the Privacy Policy",
+        'p9': "The Controller reserves the right to make changes to this Privacy Policy. The current version will always be published on the website."
     }
 }

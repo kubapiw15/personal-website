@@ -31,7 +31,8 @@
             <div class="right section">
                 <div class="box">
                     <h2 class="name">{{ domain }}</h2>
-                    <div class="logo"></div>
+                    <!-- <div class="logo"></div> -->
+                     <NuxtImg class="logo" src="/img/logo.svg"></NuxtImg>
                 </div>
                 <p class="copyright">{{ $t('footer.copyright') }}</p>
             </div>
@@ -137,9 +138,9 @@ const { domain } = useRuntimeConfig().public
     }
 
     .logo {
-        -webkit-mask: url('/img/logo.svg') no-repeat center;
+        /* -webkit-mask: url('/img/logo.svg') no-repeat center;
         mask: url('/img/logo.svg') no-repeat center;
-        background-color: var(--additive);
+        background-color: var(--additive); */
         height: 4rem;
         width: 4rem;
         transition: background-color 0.2s;
