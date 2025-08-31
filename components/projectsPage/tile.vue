@@ -5,7 +5,8 @@
             <div class="box">
                 <div class="linkBox">
                     <h2 class="name">{{ name }}</h2>
-                    <a class="link" :href="`${link}`" target="_blank">{{ linkDesc }}</a>
+                    <a v-if="link" class="link" :href="`${link}`" target="_blank">{{ linkDesc }}</a>
+                    <p v-else class="link" >{{ linkDesc }}</p>
                 </div>
                 <NuxtImg v-if="logoSrc" alt="Logo" :src="logoSrc" class="logo"></NuxtImg>
             </div>
@@ -144,6 +145,7 @@ const {name, purpose, purposeIcon, color, link, linkDesc, preview, description, 
             font-size: 0.9rem;
             text-decoration: none;
             transition: color 0.2s;
+            margin: 0;
 
             &:hover {
                 text-decoration: underline;

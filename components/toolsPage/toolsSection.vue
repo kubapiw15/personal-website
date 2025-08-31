@@ -156,6 +156,7 @@
                     ></ToolsPageTile>
 
                     <!-- TODO undraw -->
+                    <!-- TODO vuedraggable -->
                 </div>
             </div>
         </div>

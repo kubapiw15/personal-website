@@ -61,4 +61,10 @@ export const technologies = {
             icon: '',
             link: 'https://vue-i18n.intlify.dev/'
         },
+        chartjs: {
+            color: '#FF6384',
+            name: 'Chart.js',
+            icon: '',
+            link: 'https://www.chartjs.org/'
+        }
     }

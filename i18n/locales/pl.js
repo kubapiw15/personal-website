@@ -27,7 +27,8 @@ export default {
         nodata: "Brak danych",
         pp1: "Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z ",
         pp2: "polityką prywatności",
-        pp3: "."
+        pp3: ".",
+        loading: "Już prawie gotowe..."
     },
     error: {
         404: {
@@ -62,9 +63,9 @@ export default {
 
         about1: "Nazywam się",
         about2: "Jakub Piwoński,",
-        about3: "zajmuję się tworzeniem",
-        about4: "Aplikacji webowych",
-        about5: "dla Twojej firmy.",
+        about3: "tworzę",
+        about4: "Aplikacje webowe",
+        about5: "usprawniające działanie firm.",
         about6: "Skontaktuj się",
         about7: "Więcej o mnie",
 
@@ -137,12 +138,14 @@ export default {
         title: "Rzuć okiem na to, co już stworzyłem.",
         description: "Znajdziesz tu stworzone przeze mnie rozwiązania komercyjne, te w trakcie realizacji oraz aplikacje stworzone do samodzielnego ćwiczenia i rozwoju umiejętności.",
         purpose: {
-            training: "Nauka i trening",
+            tool: "Narzędzie deweloperskie",
             optimization: "Optymalizacja pracy",
-            branding: "Nauka i promocja usług",
+            branding: "Promocja marki osobistej",
+            management: "Zarządzanie aplikacją"
         },
         madefor: "Wykonano dla",
         personal: "Moja osobista strona internetowa",
+        panel: "Do zarządzania aplikacjami moich klientów",
 
         parameter1: "Wydajność",
         parameter2: "Dostępność",
@@ -151,6 +154,7 @@ export default {
         scrollmotion: "ScrollMotion to biblioteka JavaScript służąca do łatwego implementowania animacji podczas przewijania strony. Całość została zaprezentowana na nowoczesnej i minimalistycznej stronie one-page.",
         vrvreport: "VRV Report to odpowiedź na potrzebę optymalizacji oraz standaryzacji raportowania po przeglądach systemów klimatyzacji. Aplikacja przyśpiesza tworzenie raportów generując pliki PDF z wprowadzonych danych oraz wskazuje nieprawidłowości w parametrach urządzeń. Została ona wykonana w technologii PWA, co umożliwia pobieranie aplikacji webowej na urządzenia oraz działanie w trybie offline.",
         personalWebsite: "Projektując stronę, zależało mi na wiernym odzwierciedleniu mojego stylu oraz formy prezentacji treści. Minimalistyczny i przejrzysty design uzupełniają starannie dobrane grafiki oraz ikony.",
+        adminPanel: "Autorski panel administracyjny do zarządzania aplikacją, dostępny na każdym urządzeniu. Jego największą zaletą jest elastyczność - można go rozszerzyć o dowolne funkcje, dopasowane do przeznaczenia aplikacji i potrzeb klienta."
     },
     contactPage: {
         title: "Masz pomysł? Ja mam rozwiązanie.",
@@ -182,7 +186,7 @@ export default {
                 description: "Tworzenie i administrowanie aplikacjami webowymi oraz bazami danych."
             }
         },
-        start: "Od prawie roku zajmuję się tworzeniem komercyjnych aplikacji webowych optymalizujących pracę równolegle z tworzeniem rozwiązań dla moich przyszłych klientów.",
+        start: "Od prawie roku tworzę komercyjne aplikacje webowe, które optymalizują pracę. Równocześnie rozwijam rozwiązania przygotowane z myślą o moich przyszłych klientach.",
         projects: "Moje projekty",
         resources: "Moje ulubione źródła wiedzy"
     },

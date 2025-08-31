@@ -4,6 +4,15 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['@/assets/css/colors.css', '@/assets/css/animations.css', '@/assets/icons/boxicons.min.css', '@/assets/icons/boxicons-brands.min.css', 'aos/dist/aos.css'],
 
+
+  app: {
+    head: {
+      link: [
+        {rel: 'preload', as: 'image', href: '/img/logo.svg'}
+      ]
+    }
+  },
+
   devServer: {
     port: 443,
     host: '192.168.0.241',

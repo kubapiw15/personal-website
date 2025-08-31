@@ -1,8 +1,12 @@
 <template>
     <NuxtLayout></NuxtLayout>
+    <LoadingScreen  :loaded="loaded" ></LoadingScreen>
 </template>
+<!-- TODO LOADING SCREEN -->
 
 <script setup>
+
+const loaded = ref(false)
     
     const { t, locale } = useI18n()
 
@@ -20,6 +24,7 @@
                 once: true
             });
         }, 0);
+        loaded.value = true
     })
 
 </script>

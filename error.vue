@@ -73,6 +73,7 @@ useSeoMeta({
         font-size: 3rem;
         color: var(--text-main);
         margin-bottom: 2rem;
+        font-weight: 600;
     }
 
     .info {

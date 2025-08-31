@@ -105,11 +105,6 @@ const formHandler = async () => {
 
 const reset = () => {
 
-            formData.value = {
-                contact: "",
-                subject: "",
-                message: ""
-            }
             status.value = 'form'
 
 }
@@ -300,9 +295,11 @@ const reset = () => {
     p {
         color: var(--text-light);
         font-size: 0.8rem;
+        transition: color 0.2s;
 
         .link {
             color: var(--text-lighter);
+        transition: color 0.2s;
         }
     }
 }

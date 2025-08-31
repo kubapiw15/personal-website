@@ -3,8 +3,8 @@
         <div class="content">
             <ProjectsPageTile
             color="rgb(58, 97, 226)"
-            :purpose="$t('projectsPage.purpose.training')"
-            purposeIcon="bx  bx-book-bookmark"
+            :purpose="$t('projectsPage.purpose.tool')"
+            purposeIcon="bx  bx-cube"
             name="ScrollMotion"
             logoSrc="/img/logo-scrollmotion.svg"
             link="https://scrollmotion.kubapiw.dev"
@@ -26,6 +26,17 @@
             :technologies="['nuxtjs', 'googlefonts', 'boxicons', 'vitepwa', 'pinia', 'tailwind', 'pdfmake']"
             ></ProjectsPageTile>
             <ProjectsPageTile
+            color="var(--additive2)"
+            :purpose="$t('projectsPage.purpose.management')"
+            purposeIcon="bx bx-apps"
+            name="Admin Panel"
+            logoSrc=""
+            link=""
+            :linkDesc="$t('projectsPage.panel')"
+            :description="$t('projectsPage.adminPanel')"
+            :technologies="['nuxtjs', 'boxicons', 'pinia', 'chartjs']"
+            ></ProjectsPageTile>
+            <ProjectsPageTile
             color="#ffa500"
             :purpose="$t('projectsPage.purpose.branding')"
             purposeIcon="bx  bx-megaphone"
@@ -37,7 +48,6 @@
             :lighthouse="[99, 100, 100]"
             :technologies="['nuxtjs', 'googlefonts', 'boxicons', 'aosjs', 'i18n']"
             ></ProjectsPageTile>
-            <!-- TODO zaktualizować lighthouse -->
         </div>
     </div>
 </template>

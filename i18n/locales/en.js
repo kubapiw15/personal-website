@@ -26,7 +26,8 @@ export default {
         nodata: "No data",
         pp1: "I agree to the processing of my personal data in accordance with the ",
         pp2: "Privacy Policy",
-        pp3: "."
+        pp3: ".",
+        loading: "Almost done..."
     },
     error: {
         404: {
@@ -62,9 +63,9 @@ export default {
 
         about1: "My name is",
         about2: "Jakub Piwoński,",
-        about3: "I make",
+        about3: "I create",
         about4: "Web Applications",
-        about5: "for your business.",
+        about5: "that improves your business performance.",
         about6: "Contact me",
         about7: "More about me",
 
@@ -139,12 +140,14 @@ export default {
         title: "Take a look at what I've already created.",
         description: "Here you'll find commercial solutions I've built, projects currently in progress, as well as applications developed for self-practice and skill improvement.",
         purpose: {
-            training: "Education and training",
+            tool: "Development tool",
             optimization: "Work optimization",
-            branding: "Education and personal branding",
+            branding: "Personal branding",
+            management: "App management"
         },
         madefor: "Made for",
         personal: "My personal website",
+        panel: "For managing my clients' applications",
 
         parameter1: "Performance",
         parameter2: "Accessibility",
@@ -153,6 +156,7 @@ export default {
         scrollmotion: "ScrollMotion is a JavaScript library designed for easy implementation of animations during page scrolling. It is showcased on a modern, minimalist one-page website.",
         vrvreport: "VRV Report is a response to the need for optimizing and standardizing reporting after HVAC system inspections. The application speeds up report creation by generating PDF files from entered data and highlights abnormalities in device parameters. It is built as a Progressive Web App (PWA), allowing users to install the web app on their devices and use it offline.",
         personalWebsite: "When designing the website, I aimed to faithfully reflect my style and the way I present content. A minimalist and clean design is complemented by carefully selected graphics and icons.",
+        adminPanel: "A custom-built administration panel for managing the application, accessible on any device. Its greatest advantage is flexibility - it can be extended with any features tailored to the application's purpose and the client's needs."
     },
     contactPage: {
         title: "Ready? Let's start our partnership.",
