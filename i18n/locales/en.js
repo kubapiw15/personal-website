@@ -19,7 +19,7 @@ export default {
         },
         aboutmePage: {
             title: "About Me",
-            description: ""
+            description: "Here you'll find information about my career journey and my favorite sources of knowledge."
         }
     },
     general: {

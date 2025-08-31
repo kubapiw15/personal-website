@@ -19,7 +19,7 @@ export default {
         },
         aboutmePage: {
             title: "O mnie",
-            description: ""
+            description: "Znajdziesz tu informacje o mojej drodze zawodowej oraz o ulubionych źródłach wiedzy, z których korzystam."
         }
 
     },
