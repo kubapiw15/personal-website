@@ -6,9 +6,6 @@
 </template>
 
 <script setup lang="ts">
-import { ref, watch } from 'vue'
-import { useI18n } from '#imports'
-import { useRoute } from 'vue-router'
 
 const { locale, locales } = useI18n()
 const route = useRoute()
@@ -25,13 +22,6 @@ const updateSeo = () => {
     href: `${siteUrl}/${l.code}${pathWithoutPrefix}`,
     key: `alternate-${l.code}`  // <- klucz do nadpisania
   }))
-
-  alternates.push({
-    rel: 'alternate',
-    hreflang: 'x-default',
-    href: siteUrl,
-    key: 'alternate-x-default'  // <- klucz do nadpisania
-  })
 
   useHead({
     link: [
