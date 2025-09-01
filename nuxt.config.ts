@@ -10,13 +10,13 @@ export default defineNuxtConfig({
     https: true
   },
 
-  // app: {
-  //   head: {
-  //     link: [
-  //       {rel: 'alternate', href: "https://kubapiw.dev", hreflang: "x-default"},
-  //     ]
-  //   }
-  // },
+  app: {
+    head: {
+      link: [
+        {rel: 'alternate', href: "https://kubapiw.dev", hreflang: "x-default"},
+      ]
+    }
+  },
 
   runtimeConfig: {
     public: {
