@@ -6,9 +6,19 @@ export default defineNuxtConfig({
 
   devServer: {
     port: 443,
-    host: '192.168.0.241',
+    host: '192.168.1.137',
     https: true
   },
+
+  // app: {
+  //   head: {
+  //     link: [
+  //       {rel: 'alternate', href: "https://kubapiw.dev/pl", hreflang: "pl"},
+  //       {rel: 'alternate', href: "https://kubapiw.dev/en", hreflang: "en"},
+  //       {rel: 'alternate', href: "https://kubapiw.dev", hreflang: "x-default"},
+  //     ]
+  //   }
+  // },
 
   runtimeConfig: {
     public: {
@@ -17,7 +27,7 @@ export default defineNuxtConfig({
     }
   },
 
-  modules: ['@nuxtjs/color-mode', '@nuxtjs/google-fonts', '@nuxtjs/i18n', '@vueuse/nuxt', '@nuxt/image', '@pinia/nuxt'],
+  modules: ['@nuxtjs/color-mode', '@nuxtjs/google-fonts', '@nuxtjs/i18n', '@vueuse/nuxt', '@nuxt/image', '@pinia/nuxt', '@nuxtjs/sitemap'],
   colorMode: {
     preference: 'system',
     fallback: 'light',
@@ -37,6 +47,10 @@ export default defineNuxtConfig({
     download: true, // jeśli chcesz osadzić lokalnie (zalecane przy produkcji)
     inject: true
   },
+
+  sitemap: {
+    autoI18n: true
+  },
   
   i18n: {
     locales: [
@@ -50,7 +64,8 @@ export default defineNuxtConfig({
       useCookie: true, // Zapamiętuje język w cookie
       cookieKey: 'i18n_redirected',
       alwaysRedirect: false, // Przekierowuje, jeśli język przeglądarki różni się od domyślnego
-      fallbackLocale: 'en' // Język domyślny, jeśli przeglądarka ma nieobsługiwany język
+      fallbackLocale: 'en', // Język domyślny, jeśli przeglądarka ma nieobsługiwany język
+      redirectOn: 'root'
     }
   },
     nitro: {

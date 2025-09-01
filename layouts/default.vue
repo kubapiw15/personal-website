@@ -5,8 +5,47 @@
     </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
+import { ref, watch } from 'vue'
+import { useI18n } from '#imports'
+import { useRoute } from 'vue-router'
 
+const { locale, locales } = useI18n()
+const route = useRoute()
+const siteUrl = 'https://kubapiw.dev'
+
+const updateSeo = () => {
+  const pathWithoutPrefix = route.fullPath.replace(/^\/(pl|en)/, '')
+
+  const canonical = `${siteUrl}/${locale.value}${pathWithoutPrefix}`
+
+  const alternates = locales.value.map(l => ({
+    rel: 'alternate',
+    hreflang: l.code,
+    href: `${siteUrl}/${l.code}${pathWithoutPrefix}`,
+    key: `alternate-${l.code}`  // <- klucz do nadpisania
+  }))
+
+  alternates.push({
+    rel: 'alternate',
+    hreflang: 'x-default',
+    href: siteUrl,
+    key: 'alternate-x-default'  // <- klucz do nadpisania
+  })
+
+  useHead({
+    link: [
+      { rel: 'canonical', href: canonical },
+      ...alternates
+    ]
+  })
+}
+
+updateSeo()
+
+watch([() => route.fullPath, () => locale.value], () => {
+  updateSeo()
+}, { immediate: true })
 </script>
 
 <style scoped>
