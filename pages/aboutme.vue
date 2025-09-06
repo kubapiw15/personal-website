@@ -20,7 +20,7 @@
         </div>
         <AboutMePageEducationSection></AboutMePageEducationSection>
         <AboutMePageStartSection></AboutMePageStartSection>
-        <AboutMePageYoutubeSection hydrate-on-visible></AboutMePageYoutubeSection>
+        <AboutMePageYoutubeSection></AboutMePageYoutubeSection>
   </div>
 </template>
 
@@ -33,9 +33,9 @@ const { domain } = useRuntimeConfig().public
 
 
 useSeoMeta({
-  title: `${domain} - ${t('seo.aboutmePage.title')}`,
+  title: `${domain} | ${t('seo.aboutmePage.title')}`,
   description: t('seo.aboutmePage.description'),
-  ogTitle: `${domain} - ${t('seo.aboutmePage.title')}`,
+  ogTitle: `${domain} | ${t('seo.aboutmePage.title')}`,
   ogDescription: t('seo.aboutmePage.description')
 })
 

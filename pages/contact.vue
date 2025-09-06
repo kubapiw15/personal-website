@@ -31,9 +31,9 @@ const { domain } = useRuntimeConfig().public
 
 
 useSeoMeta({
-  title: `${domain} - ${t('seo.contactPage.title')}`,
+  title: `${domain} | ${t('seo.contactPage.title')}`,
   description: t('seo.contactPage.description'),
-  ogTitle: `${domain} - ${t('seo.contactPage.title')}`,
+  ogTitle: `${domain} | ${t('seo.contactPage.title')}`,
   ogDescription: t('seo.contactPage.description')
 })
 

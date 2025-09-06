@@ -2,7 +2,7 @@
     <div class="component">
         <div class="content">
             <div class="photo" data-aos="fade">
-                <NuxtImg alt="My photo" src="/img/menobg.webp" format="webp" class="img" />
+                <NuxtImg alt="My photo" src="/img/menobg.webp" format="webp" class="img"/>
             </div>
             <div class="about">
                 <h2 data-aos="anim-left">
@@ -44,8 +44,8 @@
 
     .photo {
         background-color: var(--low-contrast-30);
-        height: 37rem;
-        width: 28rem;
+        height: 35rem;
+        width: 25rem;
         border-radius: 2rem;
         margin: 3rem 8rem 3rem 0rem;
         position: relative;

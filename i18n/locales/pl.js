@@ -2,24 +2,24 @@ export default {
     seo: {
         lang: "pl",
         mainPage: {
-            title: "Zaprojektujmy razem Twoją aplikację!",
-            description: 'Tworzę strony i aplikacje, które automatyzują i wspierają Twój biznes - od podstaw, bez gotowych szablonów.',
+            title: "Unikalne aplikacje webowe dla Twojego biznesu.",
+            description: 'Nazywam się Jakub Piwoński, tworzę strony i aplikacje, które automatyzują i wspierają Twój biznes - od podstaw, bez gotowych szablonów.',
         },
         toolsPage: {
-            title: "Narzędzia",
+            title: "Narzędzia i technologie - jak tworzę aplikacje.",
             description: 'Dowiedz się więcej o technologiach oraz rozwiązaniach, które stosuję w aplikacjach, aby zapewnić im wszystkie potrzebne funkcjonalności.',
         },
         projectsPage: {
-            title: "Projekty",
+            title: "Projekty i portfolio - moje ukończone rozwiązania.",
             description: "Rzuć okiem na stworzone przeze mnie rozwiązania komercyjne, te w trakcie realizacji oraz aplikacje stworzone do rozwoju umiejętności."
         },
         contactPage: {
-            title: "Kontakt",
-            description: "Masz pomysł lub wyzwanie? Napisz do mnie i razem znajdziemy konkretne i skuteczne rozwiązanie."
+            title: "Kontakt - Dowiedz się, jak ulepszyć swój biznes.",
+            description: "Masz pomysł lub wyzwanie? Napisz do mnie i razem znajdziemy konkretne i skuteczne rozwiązanie dostosowane do Twojej branży."
         },
         aboutmePage: {
-            title: "O mnie",
-            description: "Znajdziesz tu informacje o mojej drodze zawodowej oraz o ulubionych źródłach wiedzy, z których korzystam."
+            title: "O mnie - Parę słów o mojej ścieżce zawodowej.",
+            description: "Znajdziesz tu informacje o mojej drodze zawodowej, moich umiejętnościach oraz ulubionych źródłach wiedzy i inspiracjach, z których korzystam."
         }
 
     },
@@ -88,7 +88,7 @@ export default {
         contact4: "Profil GitHub",
 
         contact5: "Skontaktujmy się.",
-        contact6: "Twój adres e-mail.",
+        contact6: "Twój adres e-mail",
         contact7: "Piszę w sprawie...",
         contact8: "Wiadomość",
         contact9: "Wyślij",

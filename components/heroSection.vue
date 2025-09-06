@@ -43,12 +43,21 @@ const iconList = [
 ]
 
 onMounted(()=>{
-    setInterval(() => {
-        icons.value.push(iconList[Math.floor(Math.random() * iconList.length)])
-        setTimeout(() => {
-            icons.value.shift()
-        }, 5500);
-    }, 200);
+    if(window.matchMedia("(max-width: 1000px)").matches) {
+        setInterval(() => {
+            icons.value.push(iconList[Math.floor(Math.random() * iconList.length)])
+            setTimeout(() => {
+                icons.value.shift()
+            }, 5500);
+        }, 400);
+    } else {
+        setInterval(() => {
+            icons.value.push(iconList[Math.floor(Math.random() * iconList.length)])
+            setTimeout(() => {
+                icons.value.shift()
+            }, 5500);
+        }, 200);
+    }
 })
 
 </script>

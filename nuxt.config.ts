@@ -13,7 +13,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       link: [
-        {rel: 'alternate', href: "https://kubapiw.dev", hreflang: "x-default"},
+        {rel: 'alternate', href: "https://kubapiw.dev/en", hreflang: "x-default"},
       ]
     }
   },

@@ -41,12 +41,13 @@ html.dark .loadingScreen {
 }
 
 .logo {
-    width: 10rem;
-    height: 10rem;
+    width: 15rem;
+    height: 15rem;
     background-color: white;
     // box-shadow: inset 0 0 10rem rgba(var(--additive2-rgb), 0.2);
     -webkit-mask: url('/img/logo.svg') no-repeat center;
     mask: url('/img/logo.svg') no-repeat center;
+    mask-size: contain;
     transition: background-color 0.2s, box-shadow 0.2s, opacity 0.2s;
     opacity: 0.6;
 }

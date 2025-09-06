@@ -32,7 +32,7 @@
                 <div class="box">
                     <h2 class="name">{{ domain }}</h2>
                     <!-- <div class="logo"></div> -->
-                     <NuxtImg class="logo" src="/img/logo.svg"></NuxtImg>
+                     <NuxtImg alt="logo" class="logo" src="/img/logo.svg"></NuxtImg>
                 </div>
                 <p class="copyright">{{ $t('footer.copyright') }}</p>
             </div>

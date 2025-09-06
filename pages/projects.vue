@@ -31,9 +31,9 @@ const { t } = useI18n()
 const { domain } = useRuntimeConfig().public
 
 useSeoMeta({
-  title: `${domain} - ${t('seo.projectsPage.title')}`,
+  title: `${domain} | ${t('seo.projectsPage.title')}`,
   description: t('seo.projectsPage.description'),
-  ogTitle: `${domain} - ${t('seo.projectsPage.title')}`,
+  ogTitle: `${domain} | ${t('seo.projectsPage.title')}`,
   ogDescription: t('seo.projectsPage.description')
 })
 

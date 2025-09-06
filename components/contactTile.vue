@@ -62,6 +62,7 @@ const { name, platform, link, blank } = defineProps(['name', 'platform', 'link',
             font-weight: 500;
             color: var(--text-main);
                 transition: color 0.2s;
+                user-select: all;
         }
     }
 
