@@ -107,6 +107,7 @@ const { icon, name, description, color, link } = defineProps(['icon', 'name', 'd
     .iconScrollMotion {
         -webkit-mask: url('/img/logo.svg') no-repeat center;
         mask: url('/img/logo.svg') no-repeat center;
+        mask-size: contain;
     }
 
     .iconChartJs {

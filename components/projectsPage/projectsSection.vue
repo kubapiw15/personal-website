@@ -34,7 +34,7 @@
             link=""
             :linkDesc="$t('projectsPage.panel')"
             :description="$t('projectsPage.adminPanel')"
-            :technologies="['nuxtjs', 'boxicons', 'pinia', 'chartjs']"
+            :technologies="['nuxtjs', 'googlefonts', 'boxicons', 'pinia', 'chartjs']"
             ></ProjectsPageTile>
             <ProjectsPageTile
             color="#ffa500"

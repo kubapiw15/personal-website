@@ -1,7 +1,7 @@
 <template>
     <div class="icon" :style="`background-color: ${technologies[icon]?.color};`" :title="technologies[icon]?.name">
         <i :class="technologies[icon]?.icon" v-if="technologies[icon]?.icon"></i>
-        <div class="backup" :style="`-webkit-mask: url('/img/icons/${icon}.svg') no-repeat center; mask: url('/img/icons/${icon}.svg') no-repeat center;`" v-else></div>
+        <div class="backup" :style="`-webkit-mask: url('/img/icons/${icon}.svg') no-repeat center/contain; mask: url('/img/icons/${icon}.svg') no-repeat center/contain;`" v-else></div>
     </div>
 </template>
 
