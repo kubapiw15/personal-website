@@ -2,24 +2,24 @@ export default {
     seo: {
         lang: "en",
         mainPage: {
-            title: "Let's just talk about Your web app!",
-            description: 'I create websites and apps that automate and enhance your business presence - built from scratch, no templates.'
+            title: "Custom web applications to grow your business",
+            description: "I'm Jakub Piwoński. I build unique websites and apps from scratch that automate processes and support business growth.",
         },
         toolsPage: {
-            title: "Tools",
-            description: 'Learn more about the technologies and solutions I use in applications to provide them with all the necessary functionalities.',
+            title: "Technologies and Tools - How I build modern web apps",
+            description: "Discover the technologies, frameworks, and solutions I apply to create secure, fast, and fully functional business applications.",
         },
         projectsPage: {
-            title: "Projects",
-            description: "Take a look at the commercial solutions I have created, those in progress, and the applications developed to improve my skills."
+            title: "Projects and Portfolio - My completed and ongoing work",
+            description: "Browse my portfolio: commercial solutions, apps in progress, and personal projects designed to improve my skills and test new ideas.",
         },
         contactPage: {
-            title: "Contact",
-            description: "Describe your problem or idea - I'll help you find the right solution. Just send a message to get started."
+            title: "Contact - Let's talk about your project idea",
+            description: "Have a business challenge or idea? Get in touch and together we'll craft a tailored solution that brings measurable results to your company.",
         },
         aboutmePage: {
-            title: "About Me",
-            description: "Here you'll find information about my career journey and my favorite sources of knowledge."
+            title: "About Me - My background and experience",
+            description: "Learn about my professional path, skills, and the resources that inspire me in building modern and effective web applications.",
         }
     },
     general: {
