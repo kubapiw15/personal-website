@@ -6,7 +6,7 @@ export default defineNuxtConfig({
 
   devServer: {
     port: 443,
-    host: '192.168.1.137',
+    host: '192.168.87.173',
     https: true
   },
 
@@ -47,8 +47,13 @@ export default defineNuxtConfig({
   },
 
   sitemap: {
-    autoI18n: true
+    autoI18n: true,
   },
+
+  site: {
+    url: "https://kubapiw.dev"
+  },
+
   
   i18n: {
     locales: [

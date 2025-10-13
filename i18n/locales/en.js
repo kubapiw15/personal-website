@@ -65,7 +65,7 @@ export default {
         about2: "Jakub Piwoński,",
         about3: "I create",
         about4: "Web Applications",
-        about5: "that improves your business performance.",
+        about5: "that improve your business performance.",
         about6: "Contact me",
         about7: "More about me",
 
