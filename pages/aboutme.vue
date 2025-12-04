@@ -20,7 +20,8 @@
         </div>
         <AboutMePageEducationSection></AboutMePageEducationSection>
         <AboutMePageStartSection></AboutMePageStartSection>
-        <AboutMePageYoutubeSection></AboutMePageYoutubeSection>
+        <!-- <AboutMePageYoutubeSection></AboutMePageYoutubeSection> -->
+        <AboutMePagePresentSection></AboutMePagePresentSection>
   </div>
 </template>
 

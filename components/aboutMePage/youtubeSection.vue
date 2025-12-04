@@ -2,6 +2,12 @@
     <div class="section">
         <div class="content">
         <h2 data-aos="fade">{{ $t('aboutmePage.resources') }}</h2>
+
+            <div class="category">
+
+                <h3 data-aos="fade">{{ $t('aboutmePage.resources2') }}</h3>
+            </div>
+            
             <div class="tileContainer">
                 <AboutMePageYouTubeTile
                 v-for="item in youtubeList"
@@ -9,10 +15,14 @@
                 :channelId="item[0]"
                 :link="item[1]"
                 ></AboutMePageYouTubeTile>
+            </div>
 
 
+            <div class="category">
 
-
+                <h3 data-aos="fade">{{ $t('aboutmePage.resources3') }}</h3>
+            </div>
+            <div class="tileContainer">
                 <AboutMePageWebsiteTile
                 v-for="item in websiteList"
                 :key="item[0]"
@@ -77,6 +87,22 @@ const websiteList = [
         margin-block: 3rem;
         font-weight: 600;
     }
+
+    .category {
+        width: 100%;
+        margin-left: 4rem;
+        box-sizing: border-box;
+
+        h3 {
+            margin-top: 3rem;
+            font-weight: 500;
+            font-size: 1.3rem;
+            color: var(--text-lighter);
+            transition: color 0.2s;
+        }
+    }
+
+
 
 .tileContainer {
     display: flex;

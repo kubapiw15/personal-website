@@ -188,9 +188,11 @@ export default {
                 description: "Development and administration of web applications and databases."
             }
         },
-        start: "For almost a year, I have been developing commercial web applications that optimize work, while simultaneously creating solutions for my future clients.",
+        start: "For over a year, I have been developing commercial web applications that optimize work, while simultaneously creating solutions for my future clients.",
         projects: "My projects",
-        resources: "My favorite sources of knowledge"
+        resources: "My favorite sources of knowledge",
+        resources2: "Professional channels",
+        resources3: "Reference materials",
     },
     privacyPolicy: {
         'title': "Privacy Policy",

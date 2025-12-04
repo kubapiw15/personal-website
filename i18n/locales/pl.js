@@ -186,9 +186,16 @@ export default {
                 description: "Tworzenie i administrowanie aplikacjami webowymi oraz bazami danych."
             }
         },
-        start: "Od prawie roku tworzę komercyjne aplikacje webowe, które optymalizują pracę. Równocześnie rozwijam rozwiązania przygotowane z myślą o moich przyszłych klientach.",
+        start: "Od ponad roku tworzę komercyjne aplikacje webowe, które optymalizują pracę. Równocześnie rozwijam rozwiązania przygotowane z myślą o moich przyszłych klientach.",
         projects: "Moje projekty",
-        resources: "Moje ulubione źródła wiedzy"
+        resources: "Moje ulubione źródła wiedzy",
+        resources2: "Kanały branżowe",
+        resources3: "Inne materiały",
+        current: "Obecnie zajmuję się...",
+        current2: "Tworzeniem aplikacji optymalizujących pracę",
+        current3: "Aplikacje służące między innymi do automatyzacji raportowania oraz łatwiejszego obliczania kosztów.",
+        current4: "Integrowaniem systemów bezpieczeństwa",
+        current5: "Niestandardowe programy do integracji kilku systemów służących do zabezpieczeń oraz kontroli dostępu.",
     },
     privacyPolicy: {
         'title': "Polityka Prywatności",

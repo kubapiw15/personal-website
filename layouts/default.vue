@@ -20,7 +20,7 @@ const updateSeo = () => {
     rel: 'alternate',
     hreflang: l.code,
     href: `${siteUrl}/${l.code}${pathWithoutPrefix}`,
-    key: `alternate-${l.code}`  // <- klucz do nadpisania
+    key: `alternate-${l.code}`
   }))
 
   useHead({

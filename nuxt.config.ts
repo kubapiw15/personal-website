@@ -6,7 +6,7 @@ export default defineNuxtConfig({
 
   devServer: {
     port: 443,
-    host: '192.168.87.173',
+    host: 'localhost',
     https: true
   },
 
@@ -64,10 +64,10 @@ export default defineNuxtConfig({
     langDir: 'locales/',
     strategy: 'prefix',
     detectBrowserLanguage: {
-      useCookie: true, // Zapamiętuje język w cookie
+      useCookie: true,
       cookieKey: 'i18n_redirected',
-      alwaysRedirect: false, // Przekierowuje, jeśli język przeglądarki różni się od domyślnego
-      fallbackLocale: 'en', // Język domyślny, jeśli przeglądarka ma nieobsługiwany język
+      alwaysRedirect: false,
+      fallbackLocale: 'en',
       redirectOn: 'root'
     }
   },
