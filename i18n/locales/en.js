@@ -193,6 +193,11 @@ export default {
         resources: "My favorite sources of knowledge",
         resources2: "Professional channels",
         resources3: "Reference materials",
+        current: "I currently work on...",
+        current2: "Creating applications that optimize workflows",
+        current3: "Applications used for tasks such as automating reporting and simplifying cost calculations.",
+        current4: "Integrating security systems",
+        current5: "Custom software for integrating multiple systems used for security and access control.",
     },
     privacyPolicy: {
         'title': "Privacy Policy",
