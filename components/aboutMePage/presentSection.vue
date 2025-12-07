@@ -128,4 +128,20 @@ import { NuxtImg } from '#components';
     }
 }
 
+@media screen and (max-width: 1400px){
+    .content {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .list .right {
+        display: none;
+    }
+
+   .content .list .tileContainer {
+        width: 100%;
+    }
+}
+
 </style>
