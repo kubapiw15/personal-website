@@ -20,7 +20,7 @@
                     </div>
                 </div>
                 <div class="right" data-aos="fade">
-                    <NuxtImg class="img" src="/img/undraw/undraw_mcp-server_2.svg"></NuxtImg>
+                    <NuxtImg alt="system image" class="img" src="/img/undraw/undraw_mcp-server_2.svg"></NuxtImg>
                 </div>
             </div>
         </div>
@@ -55,7 +55,7 @@ import { NuxtImg } from '#components';
         transition: color 0.2s, opacity 0.5s !important;
         font-size: 2rem;
         margin-block: 3rem 5rem;
-        font-weight: 500;
+        font-weight: 600;
     }
 
     .list {
@@ -94,10 +94,10 @@ import { NuxtImg } from '#components';
 
                             h3 {
                                 color: var(--text-main);
-                                font-size: 1.3rem;
+                                font-size: 1.2rem;
                                 z-index: 2;
                                 transition: color 0.2s;
-                                font-weight: 500;
+                                font-weight: 600;
                             }
 
                             p {
