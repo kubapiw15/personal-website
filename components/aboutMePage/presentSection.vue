@@ -55,6 +55,7 @@ import { NuxtImg } from '#components';
         transition: color 0.2s, opacity 0.5s !important;
         font-size: 2rem;
         margin-block: 3rem 5rem;
+        font-weight: 500;
     }
 
     .list {
@@ -87,11 +88,16 @@ import { NuxtImg } from '#components';
                             overflow: hidden;
                             transition: background-color 0.2s, border 0.2s;
 
+                            &:hover {
+                                background-color: var(--bg);
+                            }
+
                             h3 {
                                 color: var(--text-main);
                                 font-size: 1.3rem;
                                 z-index: 2;
                                 transition: color 0.2s;
+                                font-weight: 500;
                             }
 
                             p {
