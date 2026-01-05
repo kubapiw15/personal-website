@@ -46,7 +46,7 @@ export default {
         title3: "Find me",
         legal1: "EULA",
         legal2: "Privacy Policy",
-        copyright: "© 2025 Jakub Piwoński. All rights reserved."
+        copyright: `All rights reserved.`
 
     },
     mainPage: {

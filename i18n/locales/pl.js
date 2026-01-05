@@ -47,7 +47,7 @@ export default {
         title3: "Znajdź mnie",
         legal1: "EULA",
         legal2: "Polityka prywatności",
-        copyright: "© 2025 Jakub Piwoński. Wszelkie prawa zastrzeżone."
+        copyright: `Wszelkie prawa zastrzeżone.`
     },
     mainPage: {
         navbar0: "Strona główna",

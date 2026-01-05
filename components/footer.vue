@@ -34,7 +34,7 @@
                     <!-- <div class="logo"></div> -->
                      <NuxtImg alt="logo" class="logo" src="/img/logo.svg"></NuxtImg>
                 </div>
-                <p class="copyright">{{ $t('footer.copyright') }}</p>
+                <p class="copyright">{{`${copyright} ${$t('footer.copyright')}`}}</p>
             </div>
         </div>
         
@@ -42,6 +42,9 @@
 </template>
 
 <script setup>
+
+    const config = useRuntimeConfig()
+    const copyright = config.public.copyright
 
 const { domain } = useRuntimeConfig().public
 

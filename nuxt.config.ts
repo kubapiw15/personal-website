@@ -21,7 +21,8 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       domain: "kubapiw.dev",
-      api: "https://api.kubapiw.dev/api"
+      api: "https://api.kubapiw.dev/api",
+      copyright: `© ${new Date().getFullYear()} Jakub Piwoński.`
     }
   },
 
